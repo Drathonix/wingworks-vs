@@ -1,0 +1,776 @@
+[
+  {
+    "enabled": true,
+    "file": "kcsdragons:shapes/SHAPEBASE.json",
+    "op": "addmerge",
+    "path": "/animations",
+    "dependsOn": [
+      {
+        "modid": "kcsdragons"
+      }
+    ],
+    "value": [
+      {
+        "name": "Glideflap",
+        "code": "ww_flap",
+        "quantityframes": 30,
+        "onActivityStopped": "EaseOut",
+        "onAnimationEnd": "Repeat",
+        "keyframes": [
+          {
+            "frame": 0,
+            "elements": {
+              "LowerTorso": {
+                "offsetX": 0,
+                "offsetY": 3,
+                "offsetZ": 0,
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": 93
+              },
+              "UpperFootR": {
+                "offsetX": -1.5,
+                "offsetY": 0,
+                "offsetZ": 0,
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -67.5
+              },
+              "MiddleFootR": {
+                "offsetX": -1.2,
+                "offsetY": -0.7,
+                "offsetZ": 0,
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": 67.5
+              },
+              "UpperFootL": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -22.5
+              },
+              "MiddleFootL": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": 22.5
+              },
+              "UpperTorso": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -10
+              },
+              "UpperArmR": {
+                "offsetX": 0,
+                "offsetY": 1,
+                "offsetZ": 0,
+                "rotationX": -22.5,
+                "rotationY": 0,
+                "rotationZ": -135
+              },
+              "LowerArmR": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -22.5
+              },
+              "UpperArmL": {
+                "offsetX": 0,
+                "offsetY": 1,
+                "offsetZ": 0,
+                "rotationX": 22.5,
+                "rotationY": 0,
+                "rotationZ": -135
+              },
+              "LowerArmL": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -22.5
+              },
+              "Head": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -5
+              },
+              "Tail": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -43
+              },
+              "Neck": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -30
+              }
+            }
+          },
+          {
+            "frame": 14,
+            "elements": {
+              "UpperArmR": {
+                "offsetX": 0,
+                "offsetY": 1,
+                "offsetZ": 0
+              },
+              "MiddleFootR": {
+                "offsetX": -1.1,
+                "offsetY": -0.9,
+                "offsetZ": 0,
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": 60.5
+              }
+            }
+          },
+          {
+            "frame": 15,
+            "elements": {
+              "UpperFootR": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -60
+              },
+              "UpperFootL": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -18
+              }
+            }
+          },
+          {
+            "frame": 16,
+            "elements": {
+              "UpperArmL": {
+                "rotationX": 26,
+                "rotationY": 0,
+                "rotationZ": -137
+              }
+            }
+          },
+          {
+            "frame": 18,
+            "elements": {
+              "LowerTorso": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": 90
+              },
+              "MiddleFootL": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": 19
+              },
+              "Head": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": 2
+              },
+              "UpperArmR": {
+                "rotationX": -23,
+                "rotationY": 0,
+                "rotationZ": -130
+              }
+            }
+          },
+          {
+            "frame": 21,
+            "elements": {
+              "LowerArmR": {
+                "rotationX": -5,
+                "rotationY": 0,
+                "rotationZ": -30
+              },
+              "LowerArmL": {
+                "rotationX": 5,
+                "rotationY": 0,
+                "rotationZ": -15
+              }
+            }
+          },
+          {
+            "frame": 29,
+            "elements": {
+              "UpperFootL": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -24
+              }
+            }
+          }
+        ]
+      },
+      {
+        "name": "Glideflap-fp",
+        "code": "ww_flap-fp",
+        "quantityframes": 30,
+        "onActivityStopped": "EaseOut",
+        "onAnimationEnd": "Repeat",
+        "keyframes": [
+          {
+            "frame": 0,
+            "elements": {
+              "LowerTorso": {
+                "offsetX": 0,
+                "offsetY": 3,
+                "offsetZ": 0,
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": 93
+              },
+              "UpperFootR": {
+                "offsetX": -1.5,
+                "offsetY": 0,
+                "offsetZ": 0,
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -67.5
+              },
+              "MiddleFootR": {
+                "offsetX": -1.2,
+                "offsetY": -0.7,
+                "offsetZ": 0,
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": 67.5
+              },
+              "UpperFootL": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -22.5
+              },
+              "MiddleFootL": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": 22.5
+              },
+              "UpperTorso": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -10
+              },
+              "UpperArmR": {
+                "offsetX": 0,
+                "offsetY": 1,
+                "offsetZ": 0,
+                "rotationX": -22.5,
+                "rotationY": 0,
+                "rotationZ": -135
+              },
+              "LowerArmR": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -22.5
+              },
+              "UpperArmL": {
+                "offsetX": 0,
+                "offsetY": 1,
+                "offsetZ": 0,
+                "rotationX": 22.5,
+                "rotationY": 0,
+                "rotationZ": -135
+              },
+              "LowerArmL": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -22.5
+              },
+              "Head": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -5
+              },
+              "Tail": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -43
+              },
+              "Neck": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -30
+              }
+            }
+          },
+          {
+            "frame": 14,
+            "elements": {
+              "UpperArmR": {
+                "offsetX": 0,
+                "offsetY": 1,
+                "offsetZ": 0
+              },
+              "MiddleFootR": {
+                "offsetX": -1.1,
+                "offsetY": -0.9,
+                "offsetZ": 0,
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": 60.5
+              }
+            }
+          },
+          {
+            "frame": 15,
+            "elements": {
+              "UpperFootR": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -60
+              },
+              "UpperFootL": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -18
+              }
+            }
+          },
+          {
+            "frame": 16,
+            "elements": {
+              "UpperArmL": {
+                "rotationX": 26,
+                "rotationY": 0,
+                "rotationZ": -137
+              }
+            }
+          },
+          {
+            "frame": 18,
+            "elements": {
+              "LowerTorso": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": 90
+              },
+              "MiddleFootL": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": 19
+              },
+              "Head": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": 2
+              },
+              "UpperArmR": {
+                "rotationX": -23,
+                "rotationY": 0,
+                "rotationZ": -130
+              }
+            }
+          },
+          {
+            "frame": 21,
+            "elements": {
+              "LowerArmR": {
+                "rotationX": -5,
+                "rotationY": 0,
+                "rotationZ": -30
+              },
+              "LowerArmL": {
+                "rotationX": 5,
+                "rotationY": 0,
+                "rotationZ": -15
+              }
+            }
+          },
+          {
+            "frame": 29,
+            "elements": {
+              "UpperFootL": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -24
+              }
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "enabled": true,
+    "file": "kcsdragons:shapes/draicor.json",
+    "op": "addmerge",
+    "path": "/animations",
+    "dependsOn": [
+      {
+        "modid": "kcsdragons"
+      }
+    ],
+    "value": [
+      {
+        "name": "Glideflap",
+        "code": "ww_flap",
+        "quantityframes": 30,
+        "onActivityStopped": "EaseOut",
+        "onAnimationEnd": "Repeat",
+        "keyframes": [
+          {
+            "frame": 0,
+            "elements": {
+              "LowerTorso": {
+                "offsetX": 0,
+                "offsetY": 3,
+                "offsetZ": 0,
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": 93
+              },
+              "UpperFootR": {
+                "offsetX": -1.5,
+                "offsetY": 0,
+                "offsetZ": 0,
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -67.5
+              },
+              "MiddleFootR": {
+                "offsetX": -1.2,
+                "offsetY": -0.7,
+                "offsetZ": 0,
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": 67.5
+              },
+              "UpperFootL": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -22.5
+              },
+              "MiddleFootL": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": 22.5
+              },
+              "UpperTorso": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -10
+              },
+              "UpperArmR": {
+                "offsetX": 0,
+                "offsetY": 1,
+                "offsetZ": 0,
+                "rotationX": -22.5,
+                "rotationY": 0,
+                "rotationZ": -135
+              },
+              "LowerArmR": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -22.5
+              },
+              "UpperArmL": {
+                "offsetX": 0,
+                "offsetY": 1,
+                "offsetZ": 0,
+                "rotationX": 22.5,
+                "rotationY": 0,
+                "rotationZ": -135
+              },
+              "LowerArmL": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -22.5
+              },
+              "Head": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -5
+              },
+              "Tail": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -43
+              },
+              "Neck": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -30
+              }
+            }
+          },
+          {
+            "frame": 14,
+            "elements": {
+              "UpperArmR": {
+                "offsetX": 0,
+                "offsetY": 1,
+                "offsetZ": 0
+              },
+              "MiddleFootR": {
+                "offsetX": -1.1,
+                "offsetY": -0.9,
+                "offsetZ": 0,
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": 60.5
+              }
+            }
+          },
+          {
+            "frame": 15,
+            "elements": {
+              "UpperFootR": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -60
+              },
+              "UpperFootL": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -18
+              }
+            }
+          },
+          {
+            "frame": 16,
+            "elements": {
+              "UpperArmL": {
+                "rotationX": 26,
+                "rotationY": 0,
+                "rotationZ": -137
+              }
+            }
+          },
+          {
+            "frame": 18,
+            "elements": {
+              "LowerTorso": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": 90
+              },
+              "MiddleFootL": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": 19
+              },
+              "Head": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": 2
+              },
+              "UpperArmR": {
+                "rotationX": -23,
+                "rotationY": 0,
+                "rotationZ": -130
+              }
+            }
+          },
+          {
+            "frame": 21,
+            "elements": {
+              "LowerArmR": {
+                "rotationX": -5,
+                "rotationY": 0,
+                "rotationZ": -30
+              },
+              "LowerArmL": {
+                "rotationX": 5,
+                "rotationY": 0,
+                "rotationZ": -15
+              }
+            }
+          },
+          {
+            "frame": 29,
+            "elements": {
+              "UpperFootL": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -24
+              }
+            }
+          }
+        ]
+      },
+      {
+        "name": "Glideflap-fp",
+        "code": "ww_flap-fp",
+        "quantityframes": 30,
+        "onActivityStopped": "EaseOut",
+        "onAnimationEnd": "Repeat",
+        "keyframes": [
+          {
+            "frame": 0,
+            "elements": {
+              "LowerTorso": {
+                "offsetX": 0,
+                "offsetY": 3,
+                "offsetZ": 0,
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": 93
+              },
+              "UpperFootR": {
+                "offsetX": -1.5,
+                "offsetY": 0,
+                "offsetZ": 0,
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -67.5
+              },
+              "MiddleFootR": {
+                "offsetX": -1.2,
+                "offsetY": -0.7,
+                "offsetZ": 0,
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": 67.5
+              },
+              "UpperFootL": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -22.5
+              },
+              "MiddleFootL": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": 22.5
+              },
+              "UpperTorso": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -10
+              },
+              "UpperArmR": {
+                "offsetX": 0,
+                "offsetY": 1,
+                "offsetZ": 0,
+                "rotationX": -22.5,
+                "rotationY": 0,
+                "rotationZ": -135
+              },
+              "LowerArmR": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -22.5
+              },
+              "UpperArmL": {
+                "offsetX": 0,
+                "offsetY": 1,
+                "offsetZ": 0,
+                "rotationX": 22.5,
+                "rotationY": 0,
+                "rotationZ": -135
+              },
+              "LowerArmL": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -22.5
+              },
+              "Head": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -5
+              },
+              "Tail": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -43
+              },
+              "Neck": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -30
+              }
+            }
+          },
+          {
+            "frame": 14,
+            "elements": {
+              "UpperArmR": {
+                "offsetX": 0,
+                "offsetY": 1,
+                "offsetZ": 0
+              },
+              "MiddleFootR": {
+                "offsetX": -1.1,
+                "offsetY": -0.9,
+                "offsetZ": 0,
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": 60.5
+              }
+            }
+          },
+          {
+            "frame": 15,
+            "elements": {
+              "UpperFootR": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -60
+              },
+              "UpperFootL": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -18
+              }
+            }
+          },
+          {
+            "frame": 16,
+            "elements": {
+              "UpperArmL": {
+                "rotationX": 26,
+                "rotationY": 0,
+                "rotationZ": -137
+              }
+            }
+          },
+          {
+            "frame": 18,
+            "elements": {
+              "LowerTorso": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": 90
+              },
+              "MiddleFootL": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": 19
+              },
+              "Head": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": 2
+              },
+              "UpperArmR": {
+                "rotationX": -23,
+                "rotationY": 0,
+                "rotationZ": -130
+              }
+            }
+          },
+          {
+            "frame": 21,
+            "elements": {
+              "LowerArmR": {
+                "rotationX": -5,
+                "rotationY": 0,
+                "rotationZ": -30
+              },
+              "LowerArmL": {
+                "rotationX": 5,
+                "rotationY": 0,
+                "rotationZ": -15
+              }
+            }
+          },
+          {
+            "frame": 29,
+            "elements": {
+              "UpperFootL": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -24
+              }
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

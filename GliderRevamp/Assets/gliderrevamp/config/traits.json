@@ -1,0 +1,30 @@
+[
+  {
+    "code": "draicor-winged",
+    "type": "mixed",
+    "attributes": {
+      "canGlide": 1,
+      "ww_can_fly": 1,
+      "ww_stall_speed": 1,
+      "ww_start_speed": 5,
+      "ww_flap_forward_acceleration": 0.44444,
+      "ww_flap_vertical_acceleration": 5,
+      "ww_climb_coefficient": 0.18,
+      "ww_top_speed": 70
+    }
+  },
+  {
+    "code": "draconlet-winged",
+    "type": "mixed",
+    "attributes": {
+      "canGlide": 1,
+      "ww_can_fly": 1,
+      "ww_stall_speed": 1,
+      "ww_start_speed": 5,
+      "ww_flap_forward_acceleration": 0.44444,
+      "ww_flap_vertical_acceleration": 5,
+      "ww_climb_coefficient": 0.18,
+      "ww_top_speed": 70
+    }
+  }
+]

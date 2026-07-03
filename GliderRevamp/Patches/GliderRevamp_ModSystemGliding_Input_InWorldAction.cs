@@ -1,3 +1,5 @@
+using GliderRevamp.API;
+
 namespace GliderRevamp.Patches;
 
 [HarmonyPatch(typeof(ModSystemGliding), "Input_InWorldAction"), UsedImplicitly]
@@ -21,7 +23,7 @@ public class GliderRevamp_ModSystemGliding_Input_InWorldAction
         }
 
         var speedMs = entity.Pos.Motion.Length() * 60f;
-        var activationSpeed = ModConfig.Instance.ActivationSpeedMs;
+        var activationSpeed = WingworksStats.GetOrDefault(entity.Stats, "ww_start_speed", ModConfig.Instance.ActivationSpeedMs); 
         var upwardSpeed = entity.Pos.Motion.Y; // Prevent activation when jumping.
         
         return !(speedMs < activationSpeed || upwardSpeed > -3f / 60f);

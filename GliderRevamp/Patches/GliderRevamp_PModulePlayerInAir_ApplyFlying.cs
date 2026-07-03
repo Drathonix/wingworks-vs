@@ -1,6 +1,8 @@
+using GliderRevamp.API;
 using System;
 using Vintagestory.API.Common.Entities;
 using Vintagestory.API.MathTools;
+using Vintagestory.Server;
 
 namespace GliderRevamp.Patches;
 
@@ -40,7 +42,11 @@ public class GliderRevamp_PModulePlayerInAir_ApplyFlying
 
         var v = pos.Motion;
         var speed = v.Length();
-        if (speed < config.StallSpeedMs / 60f || config.DisableGlider)
+
+        var stall = WingworksStats.GetOrDefault(entity.Stats, "ww_stall_speed", config.StallSpeedMs);
+
+
+        if (speed < stall / 60f || config.DisableGlider)
         {
             controls.Gliding = false;
             controls.GlideSpeed = 0;
@@ -55,25 +61,38 @@ public class GliderRevamp_PModulePlayerInAir_ApplyFlying
         var vDir = v.Normalize();
         var viewDir = pos.GetViewVector().ToVec3d().Normalize();
 
-        var turnRateRadPerSec = config.TurnRate * (float)Math.PI / 180f;
-        var maxTurn = turnRateRadPerSec * dt;
-        
-        var newDir = RotateTowards(vDir, viewDir, maxTurn);
+        WingworksStats.OnDefaultedStat(entity.Stats, "ww_turn_rate", config.TurnRate, (deg) =>
+        {
+            var turnRateRadPerSec = deg * (float)Math.PI / 180f;
+            var maxTurn = turnRateRadPerSec * dt;
 
-        var energy = controls.GlideSpeed;
-        
-        // Apply lift.
-        energy -= config.ClimbCoefficiency * v.Y * dt;
-        
-        // Apply drag.
-        energy -= config.DragCoefficiency * Math.Max(speed * speed, 0.15f) * dt;
-        
-        // Limit new speed to terminal velocity.
-        energy = GameMath.Clamp(energy, 0, config.TerminalVelocityMs / 60f);
+            var newDir = RotateTowards(vDir, viewDir, maxTurn);
+            var energy = controls.GlideSpeed;
+            WingworksStats.OnDefaultedStat(entity.Stats, "ww_climb_coefficient", config.ClimbCoefficiency, (climbCoeff) =>
+            {
+                WingworksStats.OnDefaultedStat(entity.Stats, "ww_drag_coefficient", config.DragCoefficiency, (dragCoeff) =>
+                {
+                    // Apply lift.
+                    energy -= climbCoeff * v.Y * dt;
 
-        controls.GlideSpeed = energy;
+                    // Apply drag.
+                    energy -= dragCoeff * Math.Max(speed * speed, 0.15f) * dt;
+
+                    WingworksStats.OnDefaultedStat(entity.Stats, "ww_top_speed", config.TerminalVelocityMs, (maxVelocity) =>
+                    {
+                        // Limit new speed to terminal velocity.
+                        energy = GameMath.Clamp(energy,0F, maxVelocity / 60f);
+
+                        controls.GlideSpeed = energy;
+
+                        pos.Motion = newDir * energy;
+                    });
+                });
+            });
+        });
         
-        pos.Motion = newDir * energy;
+
+        
 
         return false;
     }

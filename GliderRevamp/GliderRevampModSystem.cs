@@ -6,7 +6,7 @@ namespace GliderRevamp;
 
 public sealed class GliderRevampModSystem : ModSystem
 {
-    private const string HarmonyId = "gliderrevamp";
+    private const string HarmonyId = "wingworks";
     private const string ConfigLibId = "configlib";
 
     private Harmony _harmony;

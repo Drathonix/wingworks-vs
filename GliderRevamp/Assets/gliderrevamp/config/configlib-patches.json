@@ -28,7 +28,7 @@
     {
       "title": "Climb Coefficiency",
       "code": "ClimbCoefficiency",
-      "comment": "Glider's climb efficiency (0.2 = 1 meter climbed costs 0.2 m/s speed)",
+      "comment": "Glider's climb efficiency (0.2 = 1 meter climbed costs 0.2 m/s speed) (ww_climb_efficiency)",
       "type": "float",
       "default": 0.2,
       "range": {
@@ -39,7 +39,7 @@
     {
       "title": "Turn Rate",
       "code": "TurnRate",
-      "comment": "Turn rate in degrees per second (90 = takes 2 seconds to do a 180 turn)",
+      "comment": "Turn rate in degrees per second (90 = takes 2 seconds to do a 180 turn) (ww_turn_rate)",
       "type": "float",
       "default": 90.0,
       "range": {
@@ -50,7 +50,7 @@
     {
       "title": "Drag Coefficiency",
       "code": "DragCoefficiency",
-      "comment": "Drag coefficient (0.1 = 10% of speed^2 lost to drag). Balances high speed and prevents infinite flying or insane distances.",
+      "comment": "Drag coefficient (0.1 = 10% of speed^2 lost to drag). Balances high speed and prevents infinite flying or insane distances. (ww_drag_coefficient)",
       "type": "float",
       "default": 0.1,
       "range": {
@@ -61,7 +61,7 @@
     {
       "title": "Stall Speed",
       "code": "StallSpeedMs",
-      "comment": "Stall speed in m/s. Player free falls below this speed.",
+      "comment": "Stall speed in m/s. Player free falls below this speed. (ww_stall_speed)",
       "type": "float",
       "default": 4.0,
       "range": {
@@ -72,7 +72,7 @@
     {
       "title": "Activation Speed",
       "code": "ActivationSpeedMs",
-      "comment": "Minimum speed in m/s required to activate the glider. Prevents accidental activation when jumping or falling.",
+      "comment": "Minimum speed in m/s required to activate the glider. Prevents accidental activation when jumping or falling. (ww_start_speed)",
       "type": "float",
       "default": 8.0,
       "range": {
@@ -83,12 +83,56 @@
     {
       "title": "Terminal Velocity",
       "code": "TerminalVelocityMs",
-      "comment": "Maximum speed in m/s the glider can reach (terminal velocity)",
+      "comment": "Maximum speed in m/s the glider can reach (terminal velocity) (ww_top_speed)",
       "type": "float",
       "default": 40.0,
       "range": {
         "min": 5.0,
         "max": 100.0
+      }
+    },
+    {
+      "title": "Flap Vertical Acceleration",
+      "code": "FlapVerticalBoost",
+      "comment": "Vertical acceleration gained each time wings are flapped. (ww_flap_vertical_multiplier)",
+      "type": "float",
+      "default": 4,
+      "range": {
+        "min": 0.0,
+        "max": 10.0
+      }
+    },
+    {
+      "title": "Flap Forward Acceleration",
+      "code": "FlapForwardBoost",
+      "comment": "Forward speed gained each time wings are flapped (ww_flap_forward_multiplier).",
+      "type": "float",
+      "default": 0.2105,
+      "range": {
+        "min": 0.0,
+        "max": 10.0
+      }
+    },
+    {
+      "title": "Flap Hunger",
+      "code": "FlapHunger",
+      "comment": "Amount of saturation drained per flap. (ww_flap_hunger)",
+      "type": "float",
+      "default": 5.0,
+      "range": {
+        "min": 0.0,
+        "max": 50.0
+      }
+    },
+    {
+      "title": "Flight Hunger",
+      "code": "FlightHunger",
+      "comment": "Amount of saturation drained per second flying. (ww_flight_hunger)",
+      "type": "float",
+      "default": 0.2,
+      "range": {
+        "min": 0.0,
+        "max": 10.0
       }
     }
   ]

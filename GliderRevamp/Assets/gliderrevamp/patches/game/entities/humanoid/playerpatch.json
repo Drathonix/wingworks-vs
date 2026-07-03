@@ -1,0 +1,20 @@
+[
+  {
+    "enabled": true,
+    "file": "game:entities/humanoid/player.json",
+    "op": "addmerge",
+    "path": "/client/animations",
+    "value": [
+      {
+        "code": "ww_flap",
+        "animation": "ww_flap",
+        "triggeredBy": {
+          "onControls": [ "Glide", "Jump" ],
+          "matchExact": true
+        },
+        "withFpVariant": true,
+        "blendMode": "Average"
+      }
+    ]
+  }
+]

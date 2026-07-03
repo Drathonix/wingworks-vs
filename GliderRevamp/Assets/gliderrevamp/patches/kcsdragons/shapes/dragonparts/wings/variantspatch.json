@@ -1,0 +1,2038 @@
+[
+  {
+    "enabled": true,
+    "file": "kcsdragons:shapes/dragonparts/wings/variant-0.json",
+    "op": "addmerge",
+    "path": "/animations",
+    "dependsOn": [
+      {
+        "modid": "kcsdragons"
+      }
+    ],
+    "value": [
+      {
+        "name": "Glideflap",
+        "code": "ww_flap",
+        "quantityframes": 30,
+        "keyframes": [
+          {
+            "frame": 0,
+            "elements": {
+              "MainJointR": {
+                "rotationX": 0,
+                "rotationY": 20,
+                "rotationZ": 50
+              },
+              "MainJointL": {
+                "offsetX": 0,
+                "offsetY": 0,
+                "offsetZ": 0.1,
+                "rotationX": 0,
+                "rotationY": -20,
+                "rotationZ": 50
+              },
+              "UlnaR": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -133
+              },
+              "UlnaL": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -133
+              },
+              "WingHandR": {
+                "rotationX": 0,
+                "rotationY": -4,
+                "rotationZ": 136
+              },
+              "WingMembraneR1": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -47
+              },
+              "WingMembraneR4": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": 75
+              },
+              "WingMembraneR2": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -33
+              },
+              "WingMembraneR5": {
+                "offsetX": 0,
+                "offsetY": -2,
+                "offsetZ": 0,
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": 93
+              },
+              "WingMembraneR3": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -55
+              },
+              "WingPinkyR1": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -70
+              },
+              "WingMiddleR1": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -27
+              },
+              "WingMembraneR7": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -12
+              },
+              "WingMembraneR6": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -61
+              },
+              "WingHandL": {
+                "rotationX": 0,
+                "rotationY": 4,
+                "rotationZ": 136
+              },
+              "WingMiddleL1": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -27
+              },
+              "WingPinkyL1": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -66
+              },
+              "WingMembraneL1": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -47
+              },
+              "WingMembraneL2": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -33
+              },
+              "WingMembraneL3": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -55
+              },
+              "WingMembraneL4": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": 75
+              },
+              "WingMembraneL5": {
+                "offsetX": 0,
+                "offsetY": -2,
+                "offsetZ": 0,
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": 93
+              },
+              "WingMembraneL6": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -61
+              },
+              "WingMembraneL7": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -12
+              },
+              "HumerusL": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": 0
+              },
+              "HumerusR": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": 0
+              }
+            }
+          },
+          {
+            "frame": 9,
+            "elements": {
+              "MainJointR": {
+                "rotationX": 0,
+                "rotationY": -50,
+                "rotationZ": 50
+              },
+              "WingHandR": {
+                "rotationX": 0,
+                "rotationY": -20,
+                "rotationZ": 136
+              },
+              "MainJointL": {
+                "rotationX": 0,
+                "rotationY": 50,
+                "rotationZ": 50
+              },
+              "WingHandL": {
+                "rotationX": 0,
+                "rotationY": 20,
+                "rotationZ": 136
+              }
+            }
+          },
+          {
+            "frame": 18,
+            "elements": {
+              "MainJointR": {
+                "rotationX": 0,
+                "rotationY": 140,
+                "rotationZ": 50
+              },
+              "WingHandR": {
+                "rotationX": 0,
+                "rotationY": 60,
+                "rotationZ": 136
+              },
+              "UlnaR": {
+                "rotationX": 0,
+                "rotationY": 40,
+                "rotationZ": -133
+              },
+              "MainJointL": {
+                "rotationX": 0,
+                "rotationY": -140,
+                "rotationZ": 50
+              },
+              "WingHandL": {
+                "rotationX": 0,
+                "rotationY": -60,
+                "rotationZ": 136
+              },
+              "UlnaL": {
+                "rotationX": 0,
+                "rotationY": -40,
+                "rotationZ": -133
+              }
+            }
+          },
+          {
+            "frame": 20,
+            "elements": {
+              "MainJointR": {
+                "rotationX": 0,
+                "rotationY": 140,
+                "rotationZ": 50
+              },
+              "WingHandR": {
+                "rotationX": 0,
+                "rotationY": 60,
+                "rotationZ": 136
+              },
+              "UlnaR": {
+                "rotationX": 0,
+                "rotationY": 40,
+                "rotationZ": -133
+              },
+              "MainJointL": {
+                "rotationX": 0,
+                "rotationY": -140,
+                "rotationZ": 50
+              },
+              "WingHandL": {
+                "rotationX": 0,
+                "rotationY": -60,
+                "rotationZ": 136
+              },
+              "UlnaL": {
+                "rotationX": 0,
+                "rotationY": -40,
+                "rotationZ": -133
+              }
+            }
+          }
+        ],
+        "onActivityStopped": "Rewind",
+        "onAnimationEnd": "EaseOut"
+      },
+      {
+        "name": "Glideflap-fp",
+        "code": "ww_flap-fp",
+        "quantityframes": 30,
+        "keyframes": [
+          {
+            "frame": 0,
+            "elements": {
+              "MainJointR": {
+                "rotationX": 0,
+                "rotationY": 20,
+                "rotationZ": 50
+              },
+              "MainJointL": {
+                "offsetX": 0,
+                "offsetY": 0,
+                "offsetZ": 0.1,
+                "rotationX": 0,
+                "rotationY": -20,
+                "rotationZ": 50
+              },
+              "UlnaR": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -133
+              },
+              "UlnaL": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -133
+              },
+              "WingHandR": {
+                "rotationX": 0,
+                "rotationY": -4,
+                "rotationZ": 136
+              },
+              "WingMembraneR1": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -47
+              },
+              "WingMembraneR4": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": 75
+              },
+              "WingMembraneR2": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -33
+              },
+              "WingMembraneR5": {
+                "offsetX": 0,
+                "offsetY": -2,
+                "offsetZ": 0,
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": 93
+              },
+              "WingMembraneR3": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -55
+              },
+              "WingPinkyR1": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -70
+              },
+              "WingMiddleR1": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -27
+              },
+              "WingMembraneR7": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -12
+              },
+              "WingMembraneR6": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -61
+              },
+              "WingHandL": {
+                "rotationX": 0,
+                "rotationY": 4,
+                "rotationZ": 136
+              },
+              "WingMiddleL1": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -27
+              },
+              "WingPinkyL1": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -66
+              },
+              "WingMembraneL1": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -47
+              },
+              "WingMembraneL2": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -33
+              },
+              "WingMembraneL3": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -55
+              },
+              "WingMembraneL4": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": 75
+              },
+              "WingMembraneL5": {
+                "offsetX": 0,
+                "offsetY": -2,
+                "offsetZ": 0,
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": 93
+              },
+              "WingMembraneL6": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -61
+              },
+              "WingMembraneL7": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -12
+              },
+              "HumerusL": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": 0
+              },
+              "HumerusR": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": 0
+              }
+            }
+          },
+          {
+            "frame": 9,
+            "elements": {
+              "MainJointR": {
+                "rotationX": 0,
+                "rotationY": -50,
+                "rotationZ": 50
+              },
+              "WingHandR": {
+                "rotationX": 0,
+                "rotationY": -20,
+                "rotationZ": 136
+              },
+              "MainJointL": {
+                "rotationX": 0,
+                "rotationY": 50,
+                "rotationZ": 50
+              },
+              "WingHandL": {
+                "rotationX": 0,
+                "rotationY": 20,
+                "rotationZ": 136
+              }
+            }
+          },
+          {
+            "frame": 18,
+            "elements": {
+              "MainJointR": {
+                "rotationX": 0,
+                "rotationY": 140,
+                "rotationZ": 50
+              },
+              "WingHandR": {
+                "rotationX": 0,
+                "rotationY": 60,
+                "rotationZ": 136
+              },
+              "UlnaR": {
+                "rotationX": 0,
+                "rotationY": 40,
+                "rotationZ": -133
+              },
+              "MainJointL": {
+                "rotationX": 0,
+                "rotationY": -140,
+                "rotationZ": 50
+              },
+              "WingHandL": {
+                "rotationX": 0,
+                "rotationY": -60,
+                "rotationZ": 136
+              },
+              "UlnaL": {
+                "rotationX": 0,
+                "rotationY": -40,
+                "rotationZ": -133
+              }
+            }
+          },
+          {
+            "frame": 20,
+            "elements": {
+              "MainJointR": {
+                "rotationX": 0,
+                "rotationY": 140,
+                "rotationZ": 50
+              },
+              "WingHandR": {
+                "rotationX": 0,
+                "rotationY": 60,
+                "rotationZ": 136
+              },
+              "UlnaR": {
+                "rotationX": 0,
+                "rotationY": 40,
+                "rotationZ": -133
+              },
+              "MainJointL": {
+                "rotationX": 0,
+                "rotationY": -140,
+                "rotationZ": 50
+              },
+              "WingHandL": {
+                "rotationX": 0,
+                "rotationY": -60,
+                "rotationZ": 136
+              },
+              "UlnaL": {
+                "rotationX": 0,
+                "rotationY": -40,
+                "rotationZ": -133
+              }
+            }
+          }
+        ],
+        "onActivityStopped": "Rewind",
+        "onAnimationEnd": "EaseOut"
+      }
+    ]
+  },
+  {
+    "enabled": true,
+    "file": "kcsdragons:shapes/dragonparts/wings/variant-1.json",
+    "op": "addmerge",
+    "path": "/animations",
+    "dependsOn": [
+      {
+        "modid": "kcsdragons"
+      }
+    ],
+    "value": [
+      {
+        "name": "Glideflap",
+        "code": "ww_flap",
+        "quantityframes": 30,
+        "keyframes": [
+          {
+            "frame": 0,
+            "elements": {
+              "MainJointR": {
+                "rotationX": 0,
+                "rotationY": 20,
+                "rotationZ": 50
+              },
+              "MainJointL": {
+                "offsetX": 0,
+                "offsetY": 0,
+                "offsetZ": 0.1,
+                "rotationX": 0,
+                "rotationY": -20,
+                "rotationZ": 50
+              },
+              "UlnaR": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -133
+              },
+              "UlnaL": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -133
+              },
+              "WingHandR": {
+                "rotationX": 0,
+                "rotationY": -4,
+                "rotationZ": 136
+              },
+              "WingMembraneR1": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -47
+              },
+              "WingMembraneR4": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": 75
+              },
+              "WingMembraneR2": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -33
+              },
+              "WingMembraneR5": {
+                "offsetX": 0,
+                "offsetY": -2,
+                "offsetZ": 0,
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": 93
+              },
+              "WingMembraneR3": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -55
+              },
+              "WingPinkyR1": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -70
+              },
+              "WingMiddleR1": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -27
+              },
+              "WingMembraneR7": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -12
+              },
+              "WingMembraneR6": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -61
+              },
+              "WingHandL": {
+                "rotationX": 0,
+                "rotationY": 4,
+                "rotationZ": 136
+              },
+              "WingMiddleL1": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -27
+              },
+              "WingPinkyL1": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -66
+              },
+              "WingMembraneL1": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -47
+              },
+              "WingMembraneL2": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -33
+              },
+              "WingMembraneL3": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -55
+              },
+              "WingMembraneL4": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": 75
+              },
+              "WingMembraneL5": {
+                "offsetX": 0,
+                "offsetY": -2,
+                "offsetZ": 0,
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": 93
+              },
+              "WingMembraneL6": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -61
+              },
+              "WingMembraneL7": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -12
+              },
+              "HumerusL": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": 0
+              },
+              "HumerusR": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": 0
+              }
+            }
+          },
+          {
+            "frame": 9,
+            "elements": {
+              "MainJointR": {
+                "rotationX": 0,
+                "rotationY": -50,
+                "rotationZ": 50
+              },
+              "WingHandR": {
+                "rotationX": 0,
+                "rotationY": -20,
+                "rotationZ": 136
+              },
+              "MainJointL": {
+                "rotationX": 0,
+                "rotationY": 50,
+                "rotationZ": 50
+              },
+              "WingHandL": {
+                "rotationX": 0,
+                "rotationY": 20,
+                "rotationZ": 136
+              }
+            }
+          },
+          {
+            "frame": 18,
+            "elements": {
+              "MainJointR": {
+                "rotationX": 0,
+                "rotationY": 140,
+                "rotationZ": 50
+              },
+              "WingHandR": {
+                "rotationX": 0,
+                "rotationY": 60,
+                "rotationZ": 136
+              },
+              "UlnaR": {
+                "rotationX": 0,
+                "rotationY": 40,
+                "rotationZ": -133
+              },
+              "MainJointL": {
+                "rotationX": 0,
+                "rotationY": -140,
+                "rotationZ": 50
+              },
+              "WingHandL": {
+                "rotationX": 0,
+                "rotationY": -60,
+                "rotationZ": 136
+              },
+              "UlnaL": {
+                "rotationX": 0,
+                "rotationY": -40,
+                "rotationZ": -133
+              }
+            }
+          },
+          {
+            "frame": 20,
+            "elements": {
+              "MainJointR": {
+                "rotationX": 0,
+                "rotationY": 140,
+                "rotationZ": 50
+              },
+              "WingHandR": {
+                "rotationX": 0,
+                "rotationY": 60,
+                "rotationZ": 136
+              },
+              "UlnaR": {
+                "rotationX": 0,
+                "rotationY": 40,
+                "rotationZ": -133
+              },
+              "MainJointL": {
+                "rotationX": 0,
+                "rotationY": -140,
+                "rotationZ": 50
+              },
+              "WingHandL": {
+                "rotationX": 0,
+                "rotationY": -60,
+                "rotationZ": 136
+              },
+              "UlnaL": {
+                "rotationX": 0,
+                "rotationY": -40,
+                "rotationZ": -133
+              }
+            }
+          }
+        ],
+        "onActivityStopped": "Rewind",
+        "onAnimationEnd": "EaseOut"
+      },
+      {
+        "name": "Glideflap-fp",
+        "code": "ww_flap-fp",
+        "quantityframes": 30,
+        "keyframes": [
+          {
+            "frame": 0,
+            "elements": {
+              "MainJointR": {
+                "rotationX": 0,
+                "rotationY": 20,
+                "rotationZ": 50
+              },
+              "MainJointL": {
+                "offsetX": 0,
+                "offsetY": 0,
+                "offsetZ": 0.1,
+                "rotationX": 0,
+                "rotationY": -20,
+                "rotationZ": 50
+              },
+              "UlnaR": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -133
+              },
+              "UlnaL": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -133
+              },
+              "WingHandR": {
+                "rotationX": 0,
+                "rotationY": -4,
+                "rotationZ": 136
+              },
+              "WingMembraneR1": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -47
+              },
+              "WingMembraneR4": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": 75
+              },
+              "WingMembraneR2": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -33
+              },
+              "WingMembraneR5": {
+                "offsetX": 0,
+                "offsetY": -2,
+                "offsetZ": 0,
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": 93
+              },
+              "WingMembraneR3": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -55
+              },
+              "WingPinkyR1": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -70
+              },
+              "WingMiddleR1": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -27
+              },
+              "WingMembraneR7": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -12
+              },
+              "WingMembraneR6": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -61
+              },
+              "WingHandL": {
+                "rotationX": 0,
+                "rotationY": 4,
+                "rotationZ": 136
+              },
+              "WingMiddleL1": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -27
+              },
+              "WingPinkyL1": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -66
+              },
+              "WingMembraneL1": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -47
+              },
+              "WingMembraneL2": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -33
+              },
+              "WingMembraneL3": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -55
+              },
+              "WingMembraneL4": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": 75
+              },
+              "WingMembraneL5": {
+                "offsetX": 0,
+                "offsetY": -2,
+                "offsetZ": 0,
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": 93
+              },
+              "WingMembraneL6": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -61
+              },
+              "WingMembraneL7": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -12
+              },
+              "HumerusL": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": 0
+              },
+              "HumerusR": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": 0
+              }
+            }
+          },
+          {
+            "frame": 9,
+            "elements": {
+              "MainJointR": {
+                "rotationX": 0,
+                "rotationY": -50,
+                "rotationZ": 50
+              },
+              "WingHandR": {
+                "rotationX": 0,
+                "rotationY": -20,
+                "rotationZ": 136
+              },
+              "MainJointL": {
+                "rotationX": 0,
+                "rotationY": 50,
+                "rotationZ": 50
+              },
+              "WingHandL": {
+                "rotationX": 0,
+                "rotationY": 20,
+                "rotationZ": 136
+              }
+            }
+          },
+          {
+            "frame": 18,
+            "elements": {
+              "MainJointR": {
+                "rotationX": 0,
+                "rotationY": 140,
+                "rotationZ": 50
+              },
+              "WingHandR": {
+                "rotationX": 0,
+                "rotationY": 60,
+                "rotationZ": 136
+              },
+              "UlnaR": {
+                "rotationX": 0,
+                "rotationY": 40,
+                "rotationZ": -133
+              },
+              "MainJointL": {
+                "rotationX": 0,
+                "rotationY": -140,
+                "rotationZ": 50
+              },
+              "WingHandL": {
+                "rotationX": 0,
+                "rotationY": -60,
+                "rotationZ": 136
+              },
+              "UlnaL": {
+                "rotationX": 0,
+                "rotationY": -40,
+                "rotationZ": -133
+              }
+            }
+          },
+          {
+            "frame": 20,
+            "elements": {
+              "MainJointR": {
+                "rotationX": 0,
+                "rotationY": 140,
+                "rotationZ": 50
+              },
+              "WingHandR": {
+                "rotationX": 0,
+                "rotationY": 60,
+                "rotationZ": 136
+              },
+              "UlnaR": {
+                "rotationX": 0,
+                "rotationY": 40,
+                "rotationZ": -133
+              },
+              "MainJointL": {
+                "rotationX": 0,
+                "rotationY": -140,
+                "rotationZ": 50
+              },
+              "WingHandL": {
+                "rotationX": 0,
+                "rotationY": -60,
+                "rotationZ": 136
+              },
+              "UlnaL": {
+                "rotationX": 0,
+                "rotationY": -40,
+                "rotationZ": -133
+              }
+            }
+          }
+        ],
+        "onActivityStopped": "Rewind",
+        "onAnimationEnd": "EaseOut"
+      }
+    ]
+  },
+  {
+    "enabled": true,
+    "file": "kcsdragons:shapes/dragonparts/wings/variant-2.json",
+    "op": "addmerge",
+    "path": "/animations",
+    "dependsOn": [
+      {
+        "modid": "kcsdragons"
+      }
+    ],
+    "value": [
+      {
+        "name": "Glideflap",
+        "code": "ww_flap",
+        "quantityframes": 30,
+        "keyframes": [
+          {
+            "frame": 0,
+            "elements": {
+              "MainJointR": {
+                "rotationX": 0,
+                "rotationY": 20,
+                "rotationZ": 50
+              },
+              "MainJointL": {
+                "offsetX": 0,
+                "offsetY": 0,
+                "offsetZ": 0.1,
+                "rotationX": 0,
+                "rotationY": -20,
+                "rotationZ": 50
+              },
+              "UlnaR": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -133
+              },
+              "UlnaL": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -133
+              },
+              "WingHandR": {
+                "rotationX": 0,
+                "rotationY": -4,
+                "rotationZ": 136
+              },
+              "WingMembraneR1": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -47
+              },
+              "WingMembraneR4": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": 75
+              },
+              "WingMembraneR2": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -33
+              },
+              "WingMembraneR5": {
+                "offsetX": 0,
+                "offsetY": -2,
+                "offsetZ": 0,
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": 93
+              },
+              "WingMembraneR3": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -55
+              },
+              "WingPinkyR1": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -70
+              },
+              "WingMiddleR1": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -27
+              },
+              "WingMembraneR7": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -12
+              },
+              "WingMembraneR6": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -61
+              },
+              "WingHandL": {
+                "rotationX": 0,
+                "rotationY": 4,
+                "rotationZ": 136
+              },
+              "WingMiddleL1": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -27
+              },
+              "WingPinkyL1": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -66
+              },
+              "WingMembraneL1": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -47
+              },
+              "WingMembraneL2": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -33
+              },
+              "WingMembraneL3": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -55
+              },
+              "WingMembraneL4": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": 75
+              },
+              "WingMembraneL5": {
+                "offsetX": 0,
+                "offsetY": -2,
+                "offsetZ": 0,
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": 93
+              },
+              "WingMembraneL6": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -61
+              },
+              "WingMembraneL7": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -12
+              },
+              "HumerusL": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": 0
+              },
+              "HumerusR": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": 0
+              }
+            }
+          },
+          {
+            "frame": 9,
+            "elements": {
+              "MainJointR": {
+                "rotationX": 0,
+                "rotationY": -50,
+                "rotationZ": 50
+              },
+              "WingHandR": {
+                "rotationX": 0,
+                "rotationY": -20,
+                "rotationZ": 136
+              },
+              "MainJointL": {
+                "rotationX": 0,
+                "rotationY": 50,
+                "rotationZ": 50
+              },
+              "WingHandL": {
+                "rotationX": 0,
+                "rotationY": 20,
+                "rotationZ": 136
+              }
+            }
+          },
+          {
+            "frame": 18,
+            "elements": {
+              "MainJointR": {
+                "rotationX": 0,
+                "rotationY": 140,
+                "rotationZ": 50
+              },
+              "WingHandR": {
+                "rotationX": 0,
+                "rotationY": 60,
+                "rotationZ": 136
+              },
+              "UlnaR": {
+                "rotationX": 0,
+                "rotationY": 40,
+                "rotationZ": -133
+              },
+              "MainJointL": {
+                "rotationX": 0,
+                "rotationY": -140,
+                "rotationZ": 50
+              },
+              "WingHandL": {
+                "rotationX": 0,
+                "rotationY": -60,
+                "rotationZ": 136
+              },
+              "UlnaL": {
+                "rotationX": 0,
+                "rotationY": -40,
+                "rotationZ": -133
+              }
+            }
+          },
+          {
+            "frame": 20,
+            "elements": {
+              "MainJointR": {
+                "rotationX": 0,
+                "rotationY": 140,
+                "rotationZ": 50
+              },
+              "WingHandR": {
+                "rotationX": 0,
+                "rotationY": 60,
+                "rotationZ": 136
+              },
+              "UlnaR": {
+                "rotationX": 0,
+                "rotationY": 40,
+                "rotationZ": -133
+              },
+              "MainJointL": {
+                "rotationX": 0,
+                "rotationY": -140,
+                "rotationZ": 50
+              },
+              "WingHandL": {
+                "rotationX": 0,
+                "rotationY": -60,
+                "rotationZ": 136
+              },
+              "UlnaL": {
+                "rotationX": 0,
+                "rotationY": -40,
+                "rotationZ": -133
+              }
+            }
+          }
+        ],
+        "onActivityStopped": "Rewind",
+        "onAnimationEnd": "EaseOut"
+      },
+      {
+        "name": "Glideflap-fp",
+        "code": "ww_flap-fp",
+        "quantityframes": 30,
+        "keyframes": [
+          {
+            "frame": 0,
+            "elements": {
+              "MainJointR": {
+                "rotationX": 0,
+                "rotationY": 20,
+                "rotationZ": 50
+              },
+              "MainJointL": {
+                "offsetX": 0,
+                "offsetY": 0,
+                "offsetZ": 0.1,
+                "rotationX": 0,
+                "rotationY": -20,
+                "rotationZ": 50
+              },
+              "UlnaR": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -133
+              },
+              "UlnaL": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -133
+              },
+              "WingHandR": {
+                "rotationX": 0,
+                "rotationY": -4,
+                "rotationZ": 136
+              },
+              "WingMembraneR1": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -47
+              },
+              "WingMembraneR4": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": 75
+              },
+              "WingMembraneR2": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -33
+              },
+              "WingMembraneR5": {
+                "offsetX": 0,
+                "offsetY": -2,
+                "offsetZ": 0,
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": 93
+              },
+              "WingMembraneR3": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -55
+              },
+              "WingPinkyR1": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -70
+              },
+              "WingMiddleR1": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -27
+              },
+              "WingMembraneR7": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -12
+              },
+              "WingMembraneR6": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -61
+              },
+              "WingHandL": {
+                "rotationX": 0,
+                "rotationY": 4,
+                "rotationZ": 136
+              },
+              "WingMiddleL1": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -27
+              },
+              "WingPinkyL1": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -66
+              },
+              "WingMembraneL1": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -47
+              },
+              "WingMembraneL2": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -33
+              },
+              "WingMembraneL3": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -55
+              },
+              "WingMembraneL4": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": 75
+              },
+              "WingMembraneL5": {
+                "offsetX": 0,
+                "offsetY": -2,
+                "offsetZ": 0,
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": 93
+              },
+              "WingMembraneL6": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -61
+              },
+              "WingMembraneL7": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -12
+              },
+              "HumerusL": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": 0
+              },
+              "HumerusR": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": 0
+              }
+            }
+          },
+          {
+            "frame": 9,
+            "elements": {
+              "MainJointR": {
+                "rotationX": 0,
+                "rotationY": -50,
+                "rotationZ": 50
+              },
+              "WingHandR": {
+                "rotationX": 0,
+                "rotationY": -20,
+                "rotationZ": 136
+              },
+              "MainJointL": {
+                "rotationX": 0,
+                "rotationY": 50,
+                "rotationZ": 50
+              },
+              "WingHandL": {
+                "rotationX": 0,
+                "rotationY": 20,
+                "rotationZ": 136
+              }
+            }
+          },
+          {
+            "frame": 18,
+            "elements": {
+              "MainJointR": {
+                "rotationX": 0,
+                "rotationY": 140,
+                "rotationZ": 50
+              },
+              "WingHandR": {
+                "rotationX": 0,
+                "rotationY": 60,
+                "rotationZ": 136
+              },
+              "UlnaR": {
+                "rotationX": 0,
+                "rotationY": 40,
+                "rotationZ": -133
+              },
+              "MainJointL": {
+                "rotationX": 0,
+                "rotationY": -140,
+                "rotationZ": 50
+              },
+              "WingHandL": {
+                "rotationX": 0,
+                "rotationY": -60,
+                "rotationZ": 136
+              },
+              "UlnaL": {
+                "rotationX": 0,
+                "rotationY": -40,
+                "rotationZ": -133
+              }
+            }
+          },
+          {
+            "frame": 20,
+            "elements": {
+              "MainJointR": {
+                "rotationX": 0,
+                "rotationY": 140,
+                "rotationZ": 50
+              },
+              "WingHandR": {
+                "rotationX": 0,
+                "rotationY": 60,
+                "rotationZ": 136
+              },
+              "UlnaR": {
+                "rotationX": 0,
+                "rotationY": 40,
+                "rotationZ": -133
+              },
+              "MainJointL": {
+                "rotationX": 0,
+                "rotationY": -140,
+                "rotationZ": 50
+              },
+              "WingHandL": {
+                "rotationX": 0,
+                "rotationY": -60,
+                "rotationZ": 136
+              },
+              "UlnaL": {
+                "rotationX": 0,
+                "rotationY": -40,
+                "rotationZ": -133
+              }
+            }
+          }
+        ],
+        "onActivityStopped": "Rewind",
+        "onAnimationEnd": "EaseOut"
+      }
+    ]
+  },
+  {
+    "enabled": true,
+    "file": "kcsdragons:shapes/dragonparts/wings/variant-3.json",
+    "op": "addmerge",
+    "path": "/animations",
+    "dependsOn": [
+      {
+        "modid": "kcsdragons"
+      }
+    ],
+    "value": [
+      {
+        "name": "Glideflap",
+        "code": "ww_flap",
+        "quantityframes": 30,
+        "keyframes": [
+          {
+            "frame": 0,
+            "elements": {
+              "MainJointR": {
+                "rotationX": 0,
+                "rotationY": 20,
+                "rotationZ": 50
+              },
+              "MainJointL": {
+                "offsetX": 0,
+                "offsetY": 0,
+                "offsetZ": 0.1,
+                "rotationX": 0,
+                "rotationY": -20,
+                "rotationZ": 50
+              },
+              "UlnaR": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -133
+              },
+              "UlnaL": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -133
+              },
+              "WingHandR": {
+                "rotationX": 0,
+                "rotationY": -4,
+                "rotationZ": 136
+              },
+              "WingMembraneR1": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -47
+              },
+              "WingMembraneR4": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": 75
+              },
+              "WingMembraneR2": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -33
+              },
+              "WingMembraneR5": {
+                "offsetX": 0,
+                "offsetY": -2,
+                "offsetZ": 0,
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": 93
+              },
+              "WingMembraneR3": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -55
+              },
+              "WingPinkyR1": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -70
+              },
+              "WingMiddleR1": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -27
+              },
+              "WingMembraneR7": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -12
+              },
+              "WingMembraneR6": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -61
+              },
+              "WingHandL": {
+                "rotationX": 0,
+                "rotationY": 4,
+                "rotationZ": 136
+              },
+              "WingMiddleL1": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -27
+              },
+              "WingPinkyL1": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -66
+              },
+              "WingMembraneL1": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -47
+              },
+              "WingMembraneL2": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -33
+              },
+              "WingMembraneL3": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -55
+              },
+              "WingMembraneL4": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": 75
+              },
+              "WingMembraneL5": {
+                "offsetX": 0,
+                "offsetY": -2,
+                "offsetZ": 0,
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": 93
+              },
+              "WingMembraneL6": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -61
+              },
+              "WingMembraneL7": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -12
+              },
+              "HumerusL": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": 0
+              },
+              "HumerusR": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": 0
+              }
+            }
+          },
+          {
+            "frame": 9,
+            "elements": {
+              "MainJointR": {
+                "rotationX": 0,
+                "rotationY": -50,
+                "rotationZ": 50
+              },
+              "WingHandR": {
+                "rotationX": 0,
+                "rotationY": -20,
+                "rotationZ": 136
+              },
+              "MainJointL": {
+                "rotationX": 0,
+                "rotationY": 50,
+                "rotationZ": 50
+              },
+              "WingHandL": {
+                "rotationX": 0,
+                "rotationY": 20,
+                "rotationZ": 136
+              }
+            }
+          },
+          {
+            "frame": 18,
+            "elements": {
+              "MainJointR": {
+                "rotationX": 0,
+                "rotationY": 140,
+                "rotationZ": 50
+              },
+              "WingHandR": {
+                "rotationX": 0,
+                "rotationY": 60,
+                "rotationZ": 136
+              },
+              "UlnaR": {
+                "rotationX": 0,
+                "rotationY": 40,
+                "rotationZ": -133
+              },
+              "MainJointL": {
+                "rotationX": 0,
+                "rotationY": -140,
+                "rotationZ": 50
+              },
+              "WingHandL": {
+                "rotationX": 0,
+                "rotationY": -60,
+                "rotationZ": 136
+              },
+              "UlnaL": {
+                "rotationX": 0,
+                "rotationY": -40,
+                "rotationZ": -133
+              }
+            }
+          },
+          {
+            "frame": 20,
+            "elements": {
+              "MainJointR": {
+                "rotationX": 0,
+                "rotationY": 140,
+                "rotationZ": 50
+              },
+              "WingHandR": {
+                "rotationX": 0,
+                "rotationY": 60,
+                "rotationZ": 136
+              },
+              "UlnaR": {
+                "rotationX": 0,
+                "rotationY": 40,
+                "rotationZ": -133
+              },
+              "MainJointL": {
+                "rotationX": 0,
+                "rotationY": -140,
+                "rotationZ": 50
+              },
+              "WingHandL": {
+                "rotationX": 0,
+                "rotationY": -60,
+                "rotationZ": 136
+              },
+              "UlnaL": {
+                "rotationX": 0,
+                "rotationY": -40,
+                "rotationZ": -133
+              }
+            }
+          }
+        ],
+        "onActivityStopped": "Rewind",
+        "onAnimationEnd": "EaseOut"
+      },
+      {
+        "name": "Glideflap-fp",
+        "code": "ww_flap-fp",
+        "quantityframes": 30,
+        "keyframes": [
+          {
+            "frame": 0,
+            "elements": {
+              "MainJointR": {
+                "rotationX": 0,
+                "rotationY": 20,
+                "rotationZ": 50
+              },
+              "MainJointL": {
+                "offsetX": 0,
+                "offsetY": 0,
+                "offsetZ": 0.1,
+                "rotationX": 0,
+                "rotationY": -20,
+                "rotationZ": 50
+              },
+              "UlnaR": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -133
+              },
+              "UlnaL": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -133
+              },
+              "WingHandR": {
+                "rotationX": 0,
+                "rotationY": -4,
+                "rotationZ": 136
+              },
+              "WingMembraneR1": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -47
+              },
+              "WingMembraneR4": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": 75
+              },
+              "WingMembraneR2": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -33
+              },
+              "WingMembraneR5": {
+                "offsetX": 0,
+                "offsetY": -2,
+                "offsetZ": 0,
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": 93
+              },
+              "WingMembraneR3": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -55
+              },
+              "WingPinkyR1": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -70
+              },
+              "WingMiddleR1": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -27
+              },
+              "WingMembraneR7": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -12
+              },
+              "WingMembraneR6": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -61
+              },
+              "WingHandL": {
+                "rotationX": 0,
+                "rotationY": 4,
+                "rotationZ": 136
+              },
+              "WingMiddleL1": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -27
+              },
+              "WingPinkyL1": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -66
+              },
+              "WingMembraneL1": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -47
+              },
+              "WingMembraneL2": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -33
+              },
+              "WingMembraneL3": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -55
+              },
+              "WingMembraneL4": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": 75
+              },
+              "WingMembraneL5": {
+                "offsetX": 0,
+                "offsetY": -2,
+                "offsetZ": 0,
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": 93
+              },
+              "WingMembraneL6": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -61
+              },
+              "WingMembraneL7": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": -12
+              },
+              "HumerusL": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": 0
+              },
+              "HumerusR": {
+                "rotationX": 0,
+                "rotationY": 0,
+                "rotationZ": 0
+              }
+            }
+          },
+          {
+            "frame": 9,
+            "elements": {
+              "MainJointR": {
+                "rotationX": 0,
+                "rotationY": -50,
+                "rotationZ": 50
+              },
+              "WingHandR": {
+                "rotationX": 0,
+                "rotationY": -20,
+                "rotationZ": 136
+              },
+              "MainJointL": {
+                "rotationX": 0,
+                "rotationY": 50,
+                "rotationZ": 50
+              },
+              "WingHandL": {
+                "rotationX": 0,
+                "rotationY": 20,
+                "rotationZ": 136
+              }
+            }
+          },
+          {
+            "frame": 18,
+            "elements": {
+              "MainJointR": {
+                "rotationX": 0,
+                "rotationY": 140,
+                "rotationZ": 50
+              },
+              "WingHandR": {
+                "rotationX": 0,
+                "rotationY": 60,
+                "rotationZ": 136
+              },
+              "UlnaR": {
+                "rotationX": 0,
+                "rotationY": 40,
+                "rotationZ": -133
+              },
+              "MainJointL": {
+                "rotationX": 0,
+                "rotationY": -140,
+                "rotationZ": 50
+              },
+              "WingHandL": {
+                "rotationX": 0,
+                "rotationY": -60,
+                "rotationZ": 136
+              },
+              "UlnaL": {
+                "rotationX": 0,
+                "rotationY": -40,
+                "rotationZ": -133
+              }
+            }
+          },
+          {
+            "frame": 20,
+            "elements": {
+              "MainJointR": {
+                "rotationX": 0,
+                "rotationY": 140,
+                "rotationZ": 50
+              },
+              "WingHandR": {
+                "rotationX": 0,
+                "rotationY": 60,
+                "rotationZ": 136
+              },
+              "UlnaR": {
+                "rotationX": 0,
+                "rotationY": 40,
+                "rotationZ": -133
+              },
+              "MainJointL": {
+                "rotationX": 0,
+                "rotationY": -140,
+                "rotationZ": 50
+              },
+              "WingHandL": {
+                "rotationX": 0,
+                "rotationY": -60,
+                "rotationZ": 136
+              },
+              "UlnaL": {
+                "rotationX": 0,
+                "rotationY": -40,
+                "rotationZ": -133
+              }
+            }
+          }
+        ],
+        "onActivityStopped": "Rewind",
+        "onAnimationEnd": "EaseOut"
+      }
+    ]
+  }
+]

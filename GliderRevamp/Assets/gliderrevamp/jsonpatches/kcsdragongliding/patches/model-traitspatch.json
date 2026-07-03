@@ -1,0 +1,24 @@
+﻿[
+	{
+		"enabled": true,
+		"file": "kcsdragongliding:patches/model-traits.json",
+		"op": "remove",
+		"path": "/1",
+		"dependsOn": [
+			{
+				"modid": "kcsdragongliding"
+			}
+		]
+	},
+	{
+		"enabled": true,
+		"file": "kcsdragongliding:patches/model-traits.json",
+		"op": "remove",
+		"path": "/0",
+		"dependsOn": [
+			{
+				"modid": "kcsdragongliding"
+			}
+		]
+	}
+]

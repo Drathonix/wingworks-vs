@@ -1,14 +1,16 @@
 {
     "type": "code",
-    "modid": "gliderrevamp",
-    "name": "Glider Revamp",
+    "modid": "wingworks",
+    "name": "Wingworks and Glider Revamp",
     "authors": [
+        "Drathonix",
         "Hunter404"
     ],
-    "description": "Makes the glider configurable and more responsive.",
+    "description": "Glider Revamp Makes the glider configurable and more responsive, Wingworks adds flight abilities.",
     "version": "0.0.3",
     "dependencies": {
-        "game": "1.21.6",
-        "configlib": ""
+      "game": "1.22.3",
+      "configlib": "",
+      "jsonpatcheslib": ""
     }
 }

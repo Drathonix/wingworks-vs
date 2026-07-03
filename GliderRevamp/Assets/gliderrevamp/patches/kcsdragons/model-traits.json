@@ -1,0 +1,30 @@
+﻿[
+	{
+		"enabled": true,
+		"file": "kcsdragons:config/customplayermodels/draconlet.json",
+		"op": "addmerge",
+		"path": "/draconlet/ExtraTraits",
+		"value": [
+			"draconlet-winged"
+		],
+		"dependsOn": [
+			{
+				"modid": "kcsdragons"
+			}
+		]
+	},
+	{
+		"enabled": true,
+		"file": "kcsdragons:config/customplayermodels/draicor.json",
+		"op": "addmerge",
+		"path": "/draicor/ExtraTraits",
+		"value": [
+			"draicor-winged"
+		],
+		"dependsOn": [
+			{
+				"modid": "kcsdragons"
+			}
+		]
+	}
+]
