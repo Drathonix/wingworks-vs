@@ -3,7 +3,7 @@
 Wingworks is a mod which grants players with the "ww_can_fly" trait the ability to gain speed and height at the cost of hunger, originally intended as an addon for Kestrelcrow's Dragonfolk mod.
 Wingworks is ALSO a fork of Glider Revamp which improves the glider usability substantially which is what the dragon glide trait uses.
 
-This mod only really exists because of the following the original glider implementation sucks and I thought it was silly that we give our player models wings and they can't even be flapped. We're throwing so hard!
+This mod only really exists because of the following the original glider implementation sucks and I thought it was silly that we give our player models wings and they can't even be flapped. We're throwing so hard~
 
 ## Dependencies
 This mod depends on [Player Model lib](https://mods.vintagestory.at/show/mod/23112),
@@ -54,7 +54,8 @@ There are plans to improve this mod in the future. I have a lot that needs fixin
 ### Contributing
 Everyone is welcome!
 
-# Glider Revamp
+# [Glider Revamp](https://github.com/Hunter404/vs-glider-revamp)
+I forked glider revamp as it was not updated to the most recent version of the game by the original maintainer and its mechanics are better than the original even if a little buggy.
 
 ## Core functionality
 
