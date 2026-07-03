@@ -1,7 +1,7 @@
 {
   "game:charattribute-ww_can_fly-1": "Can Fly",
   "game:charattribute-ww_stall_speed-1": "Will fall when gliding too slowly",
-  "game:charattribute-ww_start_speed-4": "Must be moving at least 4m/s to start gliding",
+  "game:charattribute-ww_start_speed-5": "Must be moving at least 5m/s to start gliding",
   "game:charattribute-ww_flap_forward_acceleration-0.44444": "Gains speed by flapping wings at the cost of hunger",
   "game:charattribute-ww_flap_vertical_acceleration-5": "Gains height by flapping wings",
   "game:charattribute-ww_climb_coefficient": "Slightly more efficient at ascending",
