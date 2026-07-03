@@ -1,8 +1,9 @@
 ﻿using System.Reflection;
 using ConfigLib;
-using GliderRevamp.HudElements;
+using Wingworks;
+using Wingworks.HudElements;
 
-namespace GliderRevamp;
+namespace Wingworks;
 
 public sealed class WingworksModSystem : ModSystem
 {

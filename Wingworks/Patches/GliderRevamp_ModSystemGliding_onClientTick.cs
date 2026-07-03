@@ -1,7 +1,7 @@
 using System;
 using Vintagestory.API.MathTools;
 
-namespace GliderRevamp.Patches;
+namespace Wingworks.Patches;
 
 [HarmonyPatch(typeof(ModSystemGliding), "onClientTick", typeof(float)), UsedImplicitly]
 public static class GliderRevamp_ModSystemGliding_onClientTick

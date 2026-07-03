@@ -1,5 +1,4 @@
-
-namespace GliderRevamp;
+namespace Wingworks;
 
 [UsedImplicitly]
 public sealed class ModConfig

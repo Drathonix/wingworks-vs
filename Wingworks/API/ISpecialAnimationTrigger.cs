@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using Vintagestory.API.Common.Entities;
 
-namespace GliderRevamp.API;
+namespace Wingworks.API;
 
 /// <summary>
 /// An AnimationTrigger that overrides the default animation trigger activation logic allowing animations to be triggered by non-controls

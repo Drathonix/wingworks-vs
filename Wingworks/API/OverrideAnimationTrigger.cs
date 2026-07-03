@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using Vintagestory.API.Common.Entities;
 
-namespace GliderRevamp.API;
+namespace Wingworks.API;
 
 public abstract class OverrideAnimationTrigger : AnimationTrigger, ISpecialAnimationTrigger
 {

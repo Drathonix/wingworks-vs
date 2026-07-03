@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace GliderRevamp.Patches;
+namespace Wingworks.Patches;
 
 [HarmonyPatch(typeof(AnimationMetaData), nameof(AnimationMetaData.Init)), HarmonyPriority(401)]
 

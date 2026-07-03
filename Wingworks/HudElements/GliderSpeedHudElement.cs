@@ -1,4 +1,6 @@
-namespace GliderRevamp.HudElements;
+using Wingworks;
+
+namespace Wingworks.HudElements;
 
 internal class GliderSpeedHudElement(ICoreClientAPI capi) : HudElement(capi)
 {

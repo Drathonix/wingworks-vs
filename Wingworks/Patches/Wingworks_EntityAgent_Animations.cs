@@ -1,5 +1,5 @@
 ﻿using ConfigLib;
-using GliderRevamp.API;
+using Wingworks.API;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -9,7 +9,7 @@ using System.Text;
 using Vintagestory.API.Common.Entities;
 using Vintagestory.API.Datastructures;
 
-namespace GliderRevamp.Patches;
+namespace Wingworks.Patches;
 
 [HarmonyPatch(typeof(EntityAgent), nameof(EntityAgent.OnGameTick)), HarmonyPriority(401)]
 public class Wingworks_EntityAgent_Animations

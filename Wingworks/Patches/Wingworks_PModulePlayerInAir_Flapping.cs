@@ -1,5 +1,5 @@
 ﻿using ConfigLib;
-using GliderRevamp.API;
+using Wingworks.API;
 using System;
 using System.Collections.Generic;
 using System.Numerics;
@@ -10,7 +10,7 @@ using Vintagestory.API.Datastructures;
 using Vintagestory.API.MathTools;
 using Vintagestory.Server;
 
-namespace GliderRevamp.Patches;
+namespace Wingworks.Patches;
 
 [HarmonyPatch(typeof(PModulePlayerInAir), nameof(PModulePlayerInAir.ApplyFlying)), HarmonyPriority(401)]
 public class Wingworks_PModulePlayerInAir_Flapping

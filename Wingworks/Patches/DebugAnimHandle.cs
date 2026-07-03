@@ -4,15 +4,15 @@ using System.Diagnostics;
 using System.Text;
 using Vintagestory.API.Common.Entities;
 
-namespace GliderRevamp.Patches;
+namespace Wingworks.Patches;
 
 // Disabled Debug for Animation checking. Leaving this here incase I need it.
-[HarmonyPatch(typeof(PlayerAnimationManager), nameof(PlayerAnimationManager.StartAnimation), [typeof(AnimationMetaData)]), HarmonyPriority(401)]
+//[HarmonyPatch(typeof(PlayerAnimationManager), nameof(PlayerAnimationManager.StartAnimation), [typeof(AnimationMetaData)]), HarmonyPriority(401)]
 public class DebugAnimHandle
 {
     internal static bool Prefix(PlayerAnimationManager __instance, AnimationMetaData animdata)
     {
-        Console.WriteLine("Running: " + animdata.Code + ", " + animdata.WithFpVariant);
+        //Console.WriteLine("Running: " + animdata.Code + ", " + animdata.WithFpVariant);
         //System.Diagnostics.StackTrace t = new System.Diagnostics.StackTrace();
         //Console.WriteLine(t);
         return true;

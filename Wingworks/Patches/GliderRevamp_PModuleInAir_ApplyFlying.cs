@@ -1,7 +1,7 @@
 using System.Runtime.CompilerServices;
 using Vintagestory.API.Common.Entities;
 
-namespace GliderRevamp.Patches;
+namespace Wingworks.Patches;
 
 [HarmonyPatch(typeof(PModuleInAir), "ApplyFlying"), UsedImplicitly]
 public sealed class GliderRevamp_PModuleInAir_ApplyFlying

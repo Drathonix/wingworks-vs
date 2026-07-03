@@ -2,7 +2,7 @@
 using Vintagestory.API.Common.Entities;
 using Vintagestory.API.Datastructures;
 
-namespace GliderRevamp;
+namespace Wingworks;
 
 public class WingFlapTrigger(AnimationTrigger original) : API.OverrideAnimationTrigger(original)
 {

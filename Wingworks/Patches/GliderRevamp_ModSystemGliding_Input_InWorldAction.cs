@@ -1,6 +1,6 @@
-using GliderRevamp.API;
+using Wingworks.API;
 
-namespace GliderRevamp.Patches;
+namespace Wingworks.Patches;
 
 [HarmonyPatch(typeof(ModSystemGliding), "Input_InWorldAction"), UsedImplicitly]
 public class GliderRevamp_ModSystemGliding_Input_InWorldAction

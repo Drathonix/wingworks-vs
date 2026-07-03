@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using System.Reflection.Emit;
 using Vintagestory.Client.NoObf;
 
-namespace GliderRevamp.Patches;
+namespace Wingworks.Patches;
 
 [HarmonyPatch(typeof(ClientMain), nameof(ClientMain.Set3DProjection), typeof(float), typeof(float))]
 public class Patch_Set3DProjection

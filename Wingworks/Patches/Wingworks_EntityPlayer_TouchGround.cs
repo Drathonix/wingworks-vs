@@ -1,10 +1,10 @@
-﻿using GliderRevamp.API;
+﻿using Wingworks.API;
 using System;
 using System.Collections.Generic;
 using System.Text;
 using Vintagestory.API.Datastructures;
 
-namespace GliderRevamp.Patches;
+namespace Wingworks.Patches;
 
 [HarmonyPatch(typeof(EntityPlayer),nameof(EntityPlayer.OnFallToGround))]
 public class Wingworks_EntityPlayer_TouchGround

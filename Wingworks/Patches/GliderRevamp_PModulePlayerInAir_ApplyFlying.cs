@@ -1,10 +1,10 @@
-using GliderRevamp.API;
+using Wingworks.API;
 using System;
 using Vintagestory.API.Common.Entities;
 using Vintagestory.API.MathTools;
 using Vintagestory.Server;
 
-namespace GliderRevamp.Patches;
+namespace Wingworks.Patches;
 
 [HarmonyPatch(typeof(PModulePlayerInAir), "ApplyFlying"), UsedImplicitly]
 public class GliderRevamp_PModulePlayerInAir_ApplyFlying
