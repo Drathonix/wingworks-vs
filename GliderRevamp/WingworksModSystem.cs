@@ -4,7 +4,7 @@ using GliderRevamp.HudElements;
 
 namespace GliderRevamp;
 
-public sealed class GliderRevampModSystem : ModSystem
+public sealed class WingworksModSystem : ModSystem
 {
     private const string HarmonyId = "wingworks";
     private const string ConfigLibId = "configlib";

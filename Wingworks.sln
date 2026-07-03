@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.13.35913.81
+# Visual Studio Version 18
+VisualStudioVersion = 18.7.11925.98 stable
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Glider Revamp", "GliderRevamp\GliderRevamp.csproj", "{BD11ED75-FDD2-44DF-81A3-D86EB43D3851}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wingworks", "GliderRevamp\Wingworks.csproj", "{BD11ED75-FDD2-44DF-81A3-D86EB43D3851}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CakeBuild", "ZZCakeBuild\CakeBuild.csproj", "{39225A91-76FD-45C5-85D5-907663B45D90}"
 EndProject
