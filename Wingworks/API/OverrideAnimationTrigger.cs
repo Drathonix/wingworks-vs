@@ -21,6 +21,6 @@ public abstract class OverrideAnimationTrigger : AnimationTrigger, ISpecialAnima
 
     public virtual bool ShouldDoDefaultChecksAdditionally()
     {
-        return false;
+        return true;
     }
 }

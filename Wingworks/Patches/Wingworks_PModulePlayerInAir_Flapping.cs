@@ -9,6 +9,7 @@ using Vintagestory.API.Common.Entities;
 using Vintagestory.API.Datastructures;
 using Vintagestory.API.MathTools;
 using Vintagestory.Server;
+using System.Diagnostics;
 
 namespace Wingworks.Patches;
 
@@ -25,11 +26,18 @@ public class Wingworks_PModulePlayerInAir_Flapping
             }
             ITreeAttribute wings = entity.WatchedAttributes.GetOrAddTreeAttribute("wingworks");
             var config = ModConfig.Instance;
-            //TODO player args
+            WingPosition position = WingPositionHelper.GetPosition(wings);
+            if (position == WingPosition.BRAKING)
+            {
+                WingworksStats.OnDefaultedStat(entity.Stats, "ww_brake_decceleration", 0.03F, (gainTick) =>
+                {
+                    controls.GlideSpeed -= gainTick * dt;
+                });
+            }
             if (wings.GetFloat("flap") > 9f / 30f)
             {
                 // Bonus velocity when looking up at the cost of greater hunger drain.
-                var pitchVerticalCoefficient = Math.Max(1, 1+Math.PI - entity.Pos.Pitch);
+                var pitchVerticalCoefficient = 1-Math.Min(0f,WingworksStats.GetPitchFrac(pos));
                 WingworksStats.OnDefaultedStat(entity.Stats, "ww_flap_vertical_acceleration", ModConfig.Instance.FlapVerticalBoost, (gainTickY) =>
                 {
                     WingworksStats.OnDefaultedStat(entity.Stats, "ww_pitch_vertical_multiplier", 0.5F, (val) =>
@@ -45,33 +53,16 @@ public class Wingworks_PModulePlayerInAir_Flapping
                     });
                 });
             }
-            // TODO figure out rolling.
-            // Yes I have no idea what I'm doing, I'm bad at math! If someone else knows how to roll the character around its own x acis please let me know! All the results are for unity games and this isn't one of those.
-            /*if (controls.Right)
+            // Modifying this on the client as well to reduce desync.
+            /*var t = wings.GetFloat("flap");
+            if (t > -1)
             {
-                //if(entity is EntityPlayer player){
-                //    player.CameraPos
-                //}
-                *var mat = Matrix4x4.CreateFromYawPitchRoll(entity.Pos.Yaw, entity.Pos.Pitch, entity.Pos.Roll);
-                mat = mat*Matrix4x4.CreateRotationX(-0.01F);
-                Matrix4x4.Decompose(mat,out var xyz,out var quat,out var scale);
-                entity.Pos.Roll = quat.X;
-                entity.Pos.Yaw = quat.Y;
-                entity.Pos.Pitch = quat.Z;
-                //entity.Pos.Roll = Math.Min(entity.Pos.Roll, 2F);
-            }
-            if (controls.Left)
-            {
-                entity.Pos.Roll += 0.01F;
-                //entity.Pos.Roll = Math.Min(entity.Pos.Roll, 2F);
-            }
-            if (!controls.Left && !controls.Right)
-            {
-                //if()
-                // entity.Pos.Roll += 0.01F;
+                Console.WriteLine("T: " + t + " : " + dt);
+                t += dt;
+                wings.SetFloat("flap", t);
             }*/
         }
-        return true;
+        return true; //return WingworksPModuleFlight.ApplyFlying(dt,entity,pos,controls);
     }
 }
 

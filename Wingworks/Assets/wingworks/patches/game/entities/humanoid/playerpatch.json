@@ -9,8 +9,25 @@
         "code": "ww_flap",
         "animation": "ww_flap",
         "triggeredBy": {
-          "onControls": [ "Glide", "Jump" ],
-          "matchExact": true
+          "onControls": [ "Glide" ]
+        },
+        "withFpVariant": true,
+        "blendMode": "Average"
+      },
+      {
+        "code": "ww_dive",
+        "animation": "ww_dive",
+        "triggeredBy": {
+          "onControls": [ "Glide" ]
+        },
+        "withFpVariant": true,
+        "blendMode": "Average"
+      },
+      {
+        "code": "ww_brake",
+        "animation": "ww_brake",
+        "triggeredBy": {
+          "onControls": [ "Glide" ]
         },
         "withFpVariant": true,
         "blendMode": "Average"

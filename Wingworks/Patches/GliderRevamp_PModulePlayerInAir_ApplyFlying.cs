@@ -59,7 +59,9 @@ public class GliderRevamp_PModulePlayerInAir_ApplyFlying
         }
 
         var vDir = v.Normalize();
+        //vDir.Y = 0;
         var viewDir = pos.GetViewVector().ToVec3d().Normalize();
+        //viewDir.Y = 0;
 
         WingworksStats.OnDefaultedStat(entity.Stats, "ww_turn_rate", config.TurnRate, (deg) =>
         {
@@ -67,6 +69,7 @@ public class GliderRevamp_PModulePlayerInAir_ApplyFlying
             var maxTurn = turnRateRadPerSec * dt;
 
             var newDir = RotateTowards(vDir, viewDir, maxTurn);
+            //newDir.Y = v.Normalize().Y;
             var energy = controls.GlideSpeed;
             WingworksStats.OnDefaultedStat(entity.Stats, "ww_climb_coefficient", config.ClimbCoefficiency, (climbCoeff) =>
             {

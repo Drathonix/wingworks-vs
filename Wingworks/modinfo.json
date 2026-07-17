@@ -7,7 +7,7 @@
         "Hunter404"
     ],
     "description": "Glider Revamp Makes the glider configurable and more responsive, Wingworks adds flight abilities.",
-    "version": "0.0.3",
+    "version": "1.0.1",
     "dependencies": {
       "game": "1.22.3",
       "configlib": "",

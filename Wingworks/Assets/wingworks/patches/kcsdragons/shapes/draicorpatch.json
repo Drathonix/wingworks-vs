@@ -1,6 +1,6 @@
 [
   {
-    "enabled": true,
+    "enabled": false,
     "file": "kcsdragons:shapes/SHAPEBASE.json",
     "op": "addmerge",
     "path": "/animations",
@@ -387,7 +387,7 @@
     ]
   },
   {
-    "enabled": true,
+    "enabled": false,
     "file": "kcsdragons:shapes/draicor.json",
     "op": "addmerge",
     "path": "/animations",

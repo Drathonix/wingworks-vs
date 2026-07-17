@@ -12,20 +12,40 @@ public class WingWorks_AnimationMetaData_TriggerInjection
     {
         if (__instance.Code.Equals("ww_flap"))
         {
-            __instance.TriggeredBy = new WingFlapTrigger(__instance.TriggeredBy);
+            __instance.TriggeredBy = new WingworksGlideAnimationTriggers.Flap(__instance.TriggeredBy);
         }
         if (__instance.Code.Equals("ww_flap-fp"))
         {
-            __instance.TriggeredBy = new WingFlapTrigger(__instance.TriggeredBy);
+            __instance.TriggeredBy = new WingworksGlideAnimationTriggers.Flap(__instance.TriggeredBy);
         }
+
+        if (__instance.Code.Equals("ww_brake"))
+        {
+            __instance.TriggeredBy = new WingworksGlideAnimationTriggers.Brake(__instance.TriggeredBy);
+        }
+        if (__instance.Code.Equals("ww_brake-fp"))
+        {
+            __instance.TriggeredBy = new WingworksGlideAnimationTriggers.Brake(__instance.TriggeredBy);
+        }
+
+        if (__instance.Code.Equals("ww_dive"))
+        {
+            __instance.TriggeredBy = new WingworksGlideAnimationTriggers.Dive(__instance.TriggeredBy);
+        }
+        if (__instance.Code.Equals("ww_dive-fp"))
+        {
+            __instance.TriggeredBy = new WingworksGlideAnimationTriggers.Dive(__instance.TriggeredBy);
+        }
+
         if (__instance.Code.Equals("glide"))
         {
-            __instance.TriggeredBy = new WingFlapTrigger.NoGlide(__instance.TriggeredBy);
+            __instance.TriggeredBy = new WingworksGlideAnimationTriggers.NoGlide(__instance.TriggeredBy);
         }
         if (__instance.Code.Equals("glide-fp"))
         {
-            __instance.TriggeredBy = new WingFlapTrigger.NoGlide(__instance.TriggeredBy);
+            __instance.TriggeredBy = new WingworksGlideAnimationTriggers.NoGlide(__instance.TriggeredBy);
         }
+
         return true;
     }
 }

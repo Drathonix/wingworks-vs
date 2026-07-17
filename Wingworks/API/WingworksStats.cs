@@ -10,7 +10,27 @@ public static class WingworksStats
     public static bool CanFly(EntityStats stats) {
         return (stats?.GetBlended("ww_can_fly") ?? 1) > 1;
     }
-    
+
+    /// <summary>
+    /// Returns [0-pi] when aimed down and [-pi-0] when aimed up.
+    /// </summary>
+    /// <param name="pos"></param>
+    /// <returns></returns>
+    public static float GetPitchFrac(EntityPos pos)
+    {
+        // Down is 2pi, Up is 0.
+        return (float)(pos.Pitch - float.Pi);
+    }
+
+    public static bool IsDiving(EntityPos pos)
+    {
+        return GetPitchFrac(pos) > 0.5F;
+    }
+
+    public static bool IsAscending(EntityPos pos)
+    {
+        return GetPitchFrac(pos) < -0.5F;
+    }
 
     public static void OnDefaultedStat(EntityStats stats, string category, float defaultValue, Action<float> action)
     {

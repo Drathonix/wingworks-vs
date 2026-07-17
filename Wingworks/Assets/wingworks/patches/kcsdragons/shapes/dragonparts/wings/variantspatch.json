@@ -1,6 +1,6 @@
 [
   {
-    "enabled": true,
+    "enabled": false,
     "file": "kcsdragons:shapes/dragonparts/wings/variant-0.json",
     "op": "addmerge",
     "path": "/animations",
@@ -509,7 +509,7 @@
     ]
   },
   {
-    "enabled": true,
+    "enabled": false,
     "file": "kcsdragons:shapes/dragonparts/wings/variant-1.json",
     "op": "addmerge",
     "path": "/animations",
@@ -1018,7 +1018,7 @@
     ]
   },
   {
-    "enabled": true,
+    "enabled": false,
     "file": "kcsdragons:shapes/dragonparts/wings/variant-2.json",
     "op": "addmerge",
     "path": "/animations",
@@ -1527,7 +1527,7 @@
     ]
   },
   {
-    "enabled": true,
+    "enabled": false,
     "file": "kcsdragons:shapes/dragonparts/wings/variant-3.json",
     "op": "addmerge",
     "path": "/animations",

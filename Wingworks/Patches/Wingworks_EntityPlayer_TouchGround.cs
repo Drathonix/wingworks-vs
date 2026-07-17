@@ -16,6 +16,7 @@ public class Wingworks_EntityPlayer_TouchGround
             ITreeAttribute wings = __instance.WatchedAttributes.GetOrAddTreeAttribute("wingworks");
             wings.SetFloat("flap", -1);
             wings.SetFloat("time", 0);
+            WingPositionHelper.SetPosition(wings,WingPosition.EXPANDED);
         }
     }
 }

@@ -19,6 +19,6 @@ public interface ISpecialAnimationTrigger
 
     public virtual bool ShouldDoDefaultChecksAdditionally()
     {
-        return false;
+        return true;
     }
 }
