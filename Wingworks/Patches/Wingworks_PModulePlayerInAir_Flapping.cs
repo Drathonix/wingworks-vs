@@ -29,38 +29,33 @@ public class Wingworks_PModulePlayerInAir_Flapping
             WingPosition position = WingPositionHelper.GetPosition(wings);
             if (position == WingPosition.BRAKING)
             {
-                WingworksStats.OnDefaultedStat(entity.Stats, "ww_brake_decceleration", 0.03F, (gainTick) =>
+                WingworksStats.OnDefaultedStat(entity.Stats, "ww_brake_decceleration", 0.065F, (gainTick) =>
                 {
                     controls.GlideSpeed -= gainTick * dt;
                 });
             }
-            if (wings.GetFloat("flap") > 9f / 30f)
+
+            Console.WriteLine(controls.GlideSpeed);
+            if (wings.GetFloat("flap") > 9f / 24f)
             {
                 // Bonus velocity when looking up at the cost of greater hunger drain.
-                var pitchVerticalCoefficient = 1-Math.Min(0f,WingworksStats.GetPitchFrac(pos));
+                var pitchVerticalCoefficient = 1 - Math.Min(0f, WingworksStats.GetPitchFrac(pos));
+                var pitchForwardMultiplier = Math.Clamp(float.Pow(pitchVerticalCoefficient,0.3f/(float)controls.GlideSpeed*2F)*1.5F,1F,5.5F);
                 WingworksStats.OnDefaultedStat(entity.Stats, "ww_flap_vertical_acceleration", ModConfig.Instance.FlapVerticalBoost, (gainTickY) =>
                 {
                     WingworksStats.OnDefaultedStat(entity.Stats, "ww_pitch_vertical_multiplier", 0.5F, (val) =>
                     {
-                        pos.Motion.Y += gainTickY / 21F * dt * pitchVerticalCoefficient * val;
+                        pos.Motion.Y += gainTickY / 15F * dt * val;// * pitchVerticalCoefficient * val;
                     });
                 });
-                WingworksStats.OnDefaultedStat(entity.Stats, "ww_flap_forward_acceleration", ModConfig.Instance.FlapForwardBoost, (gainTickY) =>
+                WingworksStats.OnDefaultedStat(entity.Stats, "ww_flap_forward_acceleration", ModConfig.Instance.FlapForwardBoost, (gainTickF) =>
                 {
                     WingworksStats.OnDefaultedStat(entity.Stats, "ww_pitch_forward_multiplier", 1, (val) =>
                     {
-                        controls.GlideSpeed += (gainTickY / 21F * val) * dt * pitchVerticalCoefficient;
+                        controls.GlideSpeed += (gainTickF / 15F) * dt * pitchForwardMultiplier * val;
                     });
                 });
             }
-            // Modifying this on the client as well to reduce desync.
-            /*var t = wings.GetFloat("flap");
-            if (t > -1)
-            {
-                Console.WriteLine("T: " + t + " : " + dt);
-                t += dt;
-                wings.SetFloat("flap", t);
-            }*/
         }
         return true; //return WingworksPModuleFlight.ApplyFlying(dt,entity,pos,controls);
     }

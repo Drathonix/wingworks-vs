@@ -54,7 +54,6 @@ public class WingworksGlideAnimationTriggers
     {
         public override bool Matches(Entity entity, int controls)
         {
-            //Console.WriteLine(entity.WatchedAttributes.GetFloat("flapDuration"));
             return !DoFlapAnimation(entity,0.9F) && !entity.OnGround && !IsDiving(entity);
         }
     }

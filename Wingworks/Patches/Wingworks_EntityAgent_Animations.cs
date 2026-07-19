@@ -78,15 +78,14 @@ public class Wingworks_EntityAgent_Animations
                 }
                 if (ft >= 1.25f)
                 {
-                    //TODO: redo this
-                    //var pitchVerticalCoefficient = (float)Math.Max(1, 1+Math.PI - __instance.Pos.Pitch);
+                    var pitchVerticalCoefficient = 1 - Math.Min(0f, WingworksStats.GetPitchFrac(__instance.Pos));
                     wings.SetFloat("time", 0);
                     WingworksStats.OnDefaultedStat(__instance.Stats, "ww_flight_hunger", ModConfig.Instance.FlightHunger, (hungerDrain) =>
                     {
                         EntityBehaviorHunger hunger = __instance.GetBehavior<EntityBehaviorHunger>();
                         if ((__instance is EntityPlayer player && WingworksStats.ShouldUseHunger(player)) && hunger != null)
                         {
-                            hunger.ConsumeSaturation(hungerDrain);//* pitchVerticalCoefficient);
+                            hunger.ConsumeSaturation(hungerDrain * pitchVerticalCoefficient);
                         }
                     });
                 }
