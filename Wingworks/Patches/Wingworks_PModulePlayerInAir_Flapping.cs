@@ -35,7 +35,6 @@ public class Wingworks_PModulePlayerInAir_Flapping
                 });
             }
 
-            Console.WriteLine(controls.GlideSpeed);
             if (wings.GetFloat("flap") > 9f / 24f)
             {
                 // Bonus velocity when looking up at the cost of greater hunger drain.
