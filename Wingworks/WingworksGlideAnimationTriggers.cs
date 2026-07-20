@@ -18,7 +18,7 @@ public class WingworksGlideAnimationTriggers
     public static bool IsAnimRunning(Entity entity, string code)
     {
         RunningAnimation anim = entity.AnimManager.GetAnimationState(code);
-        return anim != null && anim.Running && anim.CurrentFrame <= 24;
+        return anim != null && anim.Running && anim.CurrentFrame <= 23;
     }
 
     public static bool isExpanded(Entity entity)
