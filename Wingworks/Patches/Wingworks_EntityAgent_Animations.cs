@@ -78,14 +78,13 @@ public class Wingworks_EntityAgent_Animations
                 }
                 if (ft >= 1.25f)
                 {
-                    var pitchVerticalCoefficient = 1 - Math.Min(0f, WingworksStats.GetPitchFrac(__instance.Pos));
                     wings.SetFloat("time", 0);
                     WingworksStats.OnDefaultedStat(__instance.Stats, "ww_flight_hunger", ModConfig.Instance.FlightHunger, (hungerDrain) =>
                     {
                         EntityBehaviorHunger hunger = __instance.GetBehavior<EntityBehaviorHunger>();
                         if ((__instance is EntityPlayer player && WingworksStats.ShouldUseHunger(player)) && hunger != null)
                         {
-                            hunger.ConsumeSaturation(hungerDrain * pitchVerticalCoefficient);
+                            hunger.ConsumeSaturation(hungerDrain);
                         }
                     });
                 }
@@ -101,12 +100,13 @@ public class Wingworks_EntityAgent_Animations
                 if (t < 0 && __instance.Controls.Jump && !blockFlap)
                 {
                     wings.SetFloat("flap", 0);
+                    var pitchVerticalCoefficient = 1 - Math.Min(0f, WingworksStats.GetPitchFrac(__instance.Pos));
                     WingworksStats.OnDefaultedStat(__instance.Stats, "ww_flap_hunger", ModConfig.Instance.FlapHunger, (hungerDrain) =>
                     {
                         EntityBehaviorHunger hunger = __instance.GetBehavior<EntityBehaviorHunger>();
                         if ((__instance is EntityPlayer player && WingworksStats.ShouldUseHunger(player)) && hunger != null)
                         {
-                            hunger.ConsumeSaturation(hungerDrain);
+                            hunger.ConsumeSaturation(hungerDrain * pitchVerticalCoefficient);
                         }
                     });
                 }

@@ -21,26 +21,27 @@ Most of these traits override some value within the mod config, use them to buff
 4. "ww_flap_vertical_acceleration" [0-infinity]: Vertical acceleration per flap. Applied over 21 animation frames. Default: 4
 5. "ww_flap_forward_acceleration" [0-infinity]: Forward acceleration. Applied over 21 animation frames. Default 4/19
 6. "ww_pitch_hunger_multiplier" [0.0-infinity]: Multiplies the hunger consumed when the player flaps while aiming up.
-7. "ww_pitch_vertical_multiplier" [0.0-infinity]: Multiplies the vertical acceleration granted when the player flaps while aiming up. (these help you gain fight gravity at a significant cost)
-8. "ww_pitch_forward_multiplier" [0.0-infinity]: Multiplies forward acceleration granted when the player flaps while aiming up.
+7. ---"ww_pitch_vertical_multiplier" [0.0-infinity]: Multiplies the vertical acceleration granted when the player flaps while aiming up. (these help you gain fight gravity at a significant cost)--- Removed for the time being
+8. ---"ww_pitch_forward_multiplier" [0.0-infinity]: Multiplies forward acceleration granted when the player flaps while aiming up.--- Removed for the time being
 9. "ww_top_speed" [0.0-infinity]: The top speed the player can reach while flying in any direction.
 10. "ww_start_speed" [-2-infinity]: The minimum required speed to start flight. Keep above stall speed. Set to -2 to disable. (Higher speeds require falling further distances to start, lower allows lift off without a falling start)
 11. "ww_stall_speed" [-2-infinity]: The minimum required speed to maintain flight. Set to -2 to disable. (Mechanic introduced by glider revamp that doesn't really fit in for natural fliers honestly)
 12. "ww_climb_coefficient" [0.0-infinity]: The amount of speed lost per meter of height gained.
 13. "ww_turn_rate" [0.0-infinity]: The degrees per second you can turn.
 14. "ww_drag_coefficient" [0.0-1.0]: %Speed lost to drag.
+15. "ww_flap_min_speed" [0-infinity]: Minimum speed where a multiplier should be applied to increase initial flight speed.
 
-I have already modified the traits of KC's dragons in this mod. You can patch the patches or fork my project if you wish to nerf them.
+I have already modified the traits of KC's dragons in this mod. You can patch the patches or fork my project if you wish to nerf or buff them.
 
 ### Animations
 I'm listing unimplemented code animations in case someone wants to add them in the future, it will definitely incentivise me to add these animations codewise if someone handles the actual animating part.
 
 1. ww_flap: called when the player is gliding and presses the jump button off cooldown.
-2. ww_dive (NOT YET IMPLEMENTED CODEWISE): called when the player aims towards the direction of gravity.
+2. ww_dive: called when the player aims towards the direction of gravity.
 3. ww_dive_flap (NOT YET IMPLEMENTED CODEWISE): called while in a dive and the jump button.
 4. ww_ascend (NOT YET IMPLEMENTED CODEWISE): called while the player aims against from the direction of gravity.
 5. ww_ascend_flap (NOT YET IMPLEMENTED CODEWISE): called while ascending and the jump button is pressed.
-6. ww_brake (NOT YET IMPLEMENTED CODEWISE): called when the player presses the backwards key in flight.
+6. ww_brake: called when the player presses the backwards key in flight.
 
 ### Plans
 There are plans to improve this mod in the future. I have a lot that needs fixing and improvement here's a list:
