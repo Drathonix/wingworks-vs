@@ -16,7 +16,19 @@ public class WingworksEventHandler
         GliderEvents.RegisterCalculateClimbCoefficient(CalculateClimb, int.MaxValue);
         GliderEvents.RegisterCalculateDragCoefficient(CalculateDrag, int.MaxValue);
         GliderEvents.RegisterCalculateStallSpeed(CalculateStall, int.MaxValue);
+        GliderEvents.RegisterCalculateTurnRate(CalculateTurnRate, int.MaxValue);
+        GliderEvents.RegisterCalculateTerminalVelocity(CalculateTerminalVelocity, int.MaxValue);
         GliderEvents.RegisterBeforeGliderPhysicsCalculations(HandleFlapping, int.MaxValue);
+    }
+
+    private static float CalculateTerminalVelocity(Entity entity, EntityPos pos, float velocity)
+    {
+        return WingworksStats.GetOrDefault(entity.Stats, "ww_top_speed", velocity);
+    }
+
+    private static float CalculateTurnRate(Entity entity, EntityPos pos, float turnrate)
+    {
+        return WingworksStats.GetOrDefault(entity.Stats, "ww_turn_rate", turnrate);
     }
 
     public static float CalculateStall(Entity entity, EntityPos pos, float stall)
@@ -26,7 +38,8 @@ public class WingworksEventHandler
 
     public static float CalculateDrag(Entity entity, EntityPos pos, float drag)
     {
-        return WingworksStats.GetOrDefault(entity.Stats, "ww_drag_coefficient", drag);
+        //                                                                         TODO VVV RM THIS, I have added this temporarily to nerf the severity of drag's effect which is just too strong and prevents achieving terminal velocity.
+        return WingworksStats.GetOrDefault(entity.Stats, "ww_drag_coefficient", drag) * 0.85F;
     }
 
     public static float CalculateClimb(Entity entity, EntityPos pos, float climb)

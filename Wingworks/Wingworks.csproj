@@ -63,14 +63,12 @@
   <Content Include="assets\**">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
   </Content>
-  <Compile Include="UnusedWIPWingworksPModuleFlight.txt" />
   <Content Include="modinfo.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
   </Content>
 </ItemGroup>
 
 <ItemGroup>
-  <Folder Include="assets\wingworks\jsonpatches\" />
   <Folder Include="External\" />
   <Folder Include="Systems\" />
 </ItemGroup>

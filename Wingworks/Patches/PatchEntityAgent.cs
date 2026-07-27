@@ -17,19 +17,6 @@ public class PatchEntityAgent
 {
     static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions)
     {
-        /*var found = false;
-        foreach (var instruction in instructions)
-        {
-            if (instruction.Calls(f_someField))
-            {
-                yield return new CodeInstruction(OpCodes.Call, m_MyExtraMethod);
-                found = true;
-            }
-            yield return instruction;
-        }
-        if (found is false)
-            ReportError("Cannot find <Stdfld someField> in OriginalType.OriginalMethod");
-        */
         return Transpilers.MethodReplacer(instructions,
             typeof(AnimationMetaData).GetMethod("Matches"), typeof(PatchEntityAgent).GetMethod("SpecMatch"));
     }
