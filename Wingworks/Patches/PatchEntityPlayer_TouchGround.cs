@@ -14,7 +14,7 @@ public class Wingworks_EntityPlayer_TouchGround
         if (WingworksStats.CanFly(__instance.Stats))
         {
             ITreeAttribute wings = __instance.WatchedAttributes.GetOrAddTreeAttribute("wingworks");
-            wings.SetFloat("flap", -1);
+            wings.SetFloat("flap", -1F);
             wings.SetFloat("time", 0);
             WingPositionHelper.SetPosition(wings,WingPosition.EXPANDED);
         }

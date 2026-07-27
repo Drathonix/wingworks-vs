@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Runtime.InteropServices;
 using Vintagestory.API.Common.Entities;
 using Vintagestory.API.Datastructures;
 using Wingworks.API;
@@ -12,19 +13,7 @@ public class WingworksGlideAnimationTriggers
     {
         ITreeAttribute wings = entity.WatchedAttributes.GetOrAddTreeAttribute("wingworks");
         float t = wings.GetFloat("flap");
-        return IsAnimRunning(entity,"ww_flap") || (t > 0 && t < threshold);
-    }
-
-    public static bool IsAnimRunning(Entity entity, string code)
-    {
-        return false;
-        /*RunningAnimation anim = entity.AnimManager.GetAnimationState(code);
-        if (anim == null) return false;
-        if(anim.AnimProgress >= 0.95)
-        {
-            anim.Running = false;
-        }
-        return anim.Running;*/
+        return t > 0 && t < threshold;
     }
 
     public static bool isExpanded(Entity entity)
@@ -36,13 +25,13 @@ public class WingworksGlideAnimationTriggers
     public static bool IsDiving(Entity entity)
     {
         ITreeAttribute wings = entity.WatchedAttributes.GetOrAddTreeAttribute("wingworks");
-        return !DoFlapAnimation(entity) && (IsAnimRunning(entity,"ww_dive") || WingPositionHelper.GetPosition(wings) == WingPosition.DIVING);
+        return !DoFlapAnimation(entity) && WingPositionHelper.GetPosition(wings) == WingPosition.DIVING;
     }
 
     public static bool IsBraking(Entity entity)
     {
         ITreeAttribute wings = entity.WatchedAttributes.GetOrAddTreeAttribute("wingworks");
-        return !DoFlapAnimation(entity) && (IsAnimRunning(entity, "ww_brake") || WingPositionHelper.GetPosition(wings) == WingPosition.BRAKING);
+        return !DoFlapAnimation(entity) && WingPositionHelper.GetPosition(wings) == WingPosition.BRAKING;
     }
 
     public class Flap(AnimationTrigger original) : API.OverrideAnimationTrigger(original)
@@ -72,7 +61,6 @@ public class WingworksGlideAnimationTriggers
     {
         public override bool Matches(Entity entity, int controls)
         {
-            //Console.WriteLine(!DoFlapAnimation(entity,1.15F) + " && " + isExpanded(entity));
             return !DoFlapAnimation(entity) && isExpanded(entity);
         }
     }

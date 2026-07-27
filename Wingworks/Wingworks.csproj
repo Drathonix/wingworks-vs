@@ -11,6 +11,10 @@
       <HintPath>External\configlib.dll</HintPath>
       <Private>false</Private>
     </Reference>
+	<Reference Include="GliderRevamp">
+	    <HintPath>External\GliderRevamp.dll</HintPath>
+		<Private>false</Private>
+	</Reference>
     <Reference Include="VintagestoryAPI">
       <HintPath>$(VINTAGE_STORY)/VintagestoryAPI.dll</HintPath>
       <Private>false</Private>
@@ -59,14 +63,21 @@
   <Content Include="assets\**">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
   </Content>
+  <Compile Include="UnusedWIPWingworksPModuleFlight.txt" />
   <Content Include="modinfo.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
   </Content>
 </ItemGroup>
 
 <ItemGroup>
+  <Folder Include="assets\wingworks\jsonpatches\" />
   <Folder Include="External\" />
   <Folder Include="Systems\" />
+</ItemGroup>
+
+<ItemGroup>
+  <None Include="..\..\..\source\repos\vs-glider-revamp\GliderRevamp\bin\Debug\Mods\mod\GliderRevamp.dll" Link="External\GliderRevamp.dll" />
+  <None Include="Patches\PatchEntityPlayer_TouchGround.cs" />
 </ItemGroup>
 
 </Project>

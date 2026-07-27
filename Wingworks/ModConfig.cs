@@ -28,8 +28,8 @@ public sealed class ModConfig
 
     public float TerminalVelocityMs { get; set; } = 40f;  // m/s
 
-    public float FlapVerticalBoost { get; set; } = 4;
-    public float FlapForwardBoost { get; set; } = 4/19;
+    public float FlapVerticalBoost { get; set; } = 4f;
+    public float FlapForwardBoost { get; set; } = 4f/19f;
     public float FlightHunger { get; set; } = 0.1f;
     public float FlapHunger { get; set; } = 0.2f;
 

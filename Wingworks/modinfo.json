@@ -1,16 +1,15 @@
 {
     "type": "code",
     "modid": "wingworks",
-    "name": "Wingworks and Glider Revamp",
+    "name": "Wingworks",
     "authors": [
-        "Drathonix",
-        "Hunter404"
+        "Drathonix"
     ],
-    "description": "Glider Revamp Makes the glider configurable and more responsive, Wingworks adds flight abilities.",
-    "version": "1.0.1",
+    "description": "Wingworks adds flight abilities and animation support with player attributes.",
+    "version": "1.1.0",
     "dependencies": {
       "game": "1.22.3",
-      "configlib": "",
-      "jsonpatcheslib": ""
+      "gliderrevampdrathon": "1.0.0",
+      "configlib": ""
     }
 }

@@ -1,22 +1,45 @@
-﻿using ConfigLib;
-using Wingworks.API;
+﻿using GliderRevamp;
 using System;
 using System.Collections.Generic;
-using System.Numerics;
 using System.Text;
-using Vintagestory;
 using Vintagestory.API.Common.Entities;
 using Vintagestory.API.Datastructures;
-using Vintagestory.API.MathTools;
-using Vintagestory.Server;
-using System.Diagnostics;
+using Wingworks.API;
 
-namespace Wingworks.Patches;
+namespace Wingworks;
 
-[HarmonyPatch(typeof(PModulePlayerInAir), nameof(PModulePlayerInAir.ApplyFlying)), HarmonyPriority(401)]
-public class Wingworks_PModulePlayerInAir_Flapping
+public class WingworksEventHandler
 {
-    internal static bool Prefix(PModulePlayerInAir __instance, float dt, Entity entity, EntityPos pos, EntityControls controls)
+    public static void Init()
+    {
+        GliderEvents.RegisterCalculateActivationSpeed(CalculateActivationSpeed, int.MaxValue);
+        GliderEvents.RegisterCalculateClimbCoefficient(CalculateClimb, int.MaxValue);
+        GliderEvents.RegisterCalculateDragCoefficient(CalculateDrag, int.MaxValue);
+        GliderEvents.RegisterCalculateStallSpeed(CalculateStall, int.MaxValue);
+        GliderEvents.RegisterBeforeGliderPhysicsCalculations(HandleFlapping, int.MaxValue);
+    }
+
+    public static float CalculateStall(Entity entity, EntityPos pos, float stall)
+    {
+        return WingworksStats.GetOrDefault(entity.Stats, "ww_stall_speed", stall);
+    }
+
+    public static float CalculateDrag(Entity entity, EntityPos pos, float drag)
+    {
+        return WingworksStats.GetOrDefault(entity.Stats, "ww_drag_coefficient", drag);
+    }
+
+    public static float CalculateClimb(Entity entity, EntityPos pos, float climb)
+    {
+        return WingworksStats.GetOrDefault(entity.Stats, "ww_climb_coefficient", climb);
+    }
+
+    public static float CalculateActivationSpeed(Entity entity, EntityPos pos, float activation)
+    {
+        return WingworksStats.GetOrDefault(entity.Stats, "ww_start_speed", activation);
+    }
+
+    private static bool HandleFlapping(PModulePlayerInAir pModule, float dt, Entity entity, EntityPos pos, EntityControls controls)
     {
         if (entity is EntityPlayer player)
         {
@@ -49,7 +72,7 @@ public class Wingworks_PModulePlayerInAir_Flapping
                 });
                 WingworksStats.OnDefaultedStat(entity.Stats, "ww_flap_forward_acceleration", ModConfig.Instance.FlapForwardBoost, (gainTickF) =>
                 {
-                    WingworksStats.OnDefaultedStat(entity.Stats, "ww_flap_min_speed", 0.3F, (speedMin)=>{
+                    WingworksStats.OnDefaultedStat(entity.Stats, "ww_flap_min_speed", 0.3F, (speedMin) => {
                         //WingworksStats.OnDefaultedStat(entity.Stats, "ww_pitch_forward_multiplier", 1, (val) =>
                         // {
                         // Bonus velocity when below specific speed.
@@ -65,6 +88,3 @@ public class Wingworks_PModulePlayerInAir_Flapping
         return true; //return WingworksPModuleFlight.ApplyFlying(dt,entity,pos,controls);
     }
 }
-
-//grounded: no flap anim, no cooldown.
-//glide: no flap anim, no cooldown.

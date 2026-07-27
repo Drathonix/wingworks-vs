@@ -6,7 +6,7 @@ namespace Wingworks.Patches;
 
 [HarmonyPatch(typeof(AnimationMetaData), nameof(AnimationMetaData.Init)), HarmonyPriority(401)]
 
-public class WingWorks_AnimationMetaData_TriggerInjection
+public class PatchAnimationMetaData_TriggerInjection
 {
     internal static bool Prefix(AnimationMetaData __instance)
     {

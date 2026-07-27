@@ -11,12 +11,10 @@ public sealed class WingworksModSystem : ModSystem
     private const string ConfigLibId = "configlib";
 
     private Harmony _harmony;
-    private GliderSpeedHudElement _gliderSpeedHud;
 
     public override void Start(ICoreAPI api)
     {
-        base.Start(api);
-        
+        WingworksEventHandler.Init();
         if (api.ModLoader.IsModEnabled(ConfigLibId))
         {
             SubscribeToConfigChange(api);
@@ -28,10 +26,6 @@ public sealed class WingworksModSystem : ModSystem
 
     public override void StartClientSide(ICoreClientAPI capi)
     {
-        base.StartClientSide(capi);
-        
-        _gliderSpeedHud = new GliderSpeedHudElement(capi);
-        capi.Gui.RegisterDialog(_gliderSpeedHud);
     }
 
     public override void Dispose()
@@ -39,7 +33,6 @@ public sealed class WingworksModSystem : ModSystem
         base.Dispose();
 
         _harmony?.UnpatchAll(HarmonyId);
-        _gliderSpeedHud?.Dispose();
     }
 
     private static void SubscribeToConfigChange(ICoreAPI api)

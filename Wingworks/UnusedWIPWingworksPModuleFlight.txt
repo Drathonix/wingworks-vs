@@ -11,7 +11,7 @@ using Wingworks.API;
 
 namespace Wingworks;
 
-public class WingworksPModuleFlight
+public class UnusedWIPWingworksPModuleFlight
 {
 
 
