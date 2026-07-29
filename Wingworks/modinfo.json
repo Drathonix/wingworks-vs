@@ -3,10 +3,10 @@
     "modid": "wingworks",
     "name": "Wingworks",
     "authors": [
-        "Drathonix"
+        "Drathon"
     ],
     "description": "Wingworks adds flight abilities and animation support with player attributes.",
-    "version": "1.1.0",
+    "version": "1.1.2",
     "dependencies": {
       "game": "1.22.3",
       "gliderrevampdrathon": "1.0.2",

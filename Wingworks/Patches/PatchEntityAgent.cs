@@ -15,13 +15,29 @@ namespace Wingworks.Patches;
 [HarmonyPatch(typeof(EntityAgent), nameof(EntityAgent.OnGameTick)), HarmonyPriority(401)]
 public class PatchEntityAgent
 {
+
     static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions)
     {
-        return Transpilers.MethodReplacer(instructions,
-            typeof(AnimationMetaData).GetMethod("Matches"), typeof(PatchEntityAgent).GetMethod("SpecMatch"));
+        var targetMethod = typeof(AnimationMetaData).GetMethod("Matches");
+        var replMethod = typeof(PatchEntityAgent).GetMethod("SpecMatch");
+
+        var code = new List<CodeInstruction>(instructions);
+        for (int i = 0; i < code.Count; i++)
+        {
+            var inst = code[i];
+            if (inst.Calls(targetMethod))
+            {
+                code[i] = new CodeInstruction(OpCodes.Ldarg_0);
+                code.Insert(i+1,new CodeInstruction(OpCodes.Call,replMethod));
+                //hasPatched = true;
+            }
+        }
+        //if (!hasPatched) throw new Exception("Did not find a target method. Wingworks cannot work in this version of VintageStory. Please report immediately with title of \"PatchEntityAgent Transpiler Failure in Most Recent Game Version\". Thank you!");
+        return code;
+
     }
 
-    public static bool SpecMatch(AnimationMetaData __instance, int controls)
+    public static bool SpecMatch(AnimationMetaData __instance, int controls, EntityAgent entity)
     {
         if(__instance.TriggeredBy is ISpecialAnimationTrigger trigger)
         {
@@ -29,18 +45,16 @@ public class PatchEntityAgent
             {
                 return false;
             }
-            return trigger.Matches(cachedInst,controls);
+            return trigger.Matches(entity,controls);
         }
         return __instance.Matches(controls);
     }
 
-    private static EntityAgent cachedInst;
 
     internal static bool Prefix(EntityAgent __instance, float dt)
     {
         if (WingworksStats.CanFly(__instance.Stats) && __instance.Api.Side.IsServer())
         {
-            cachedInst = __instance;
             ITreeAttribute wings = __instance.WatchedAttributes.GetOrAddTreeAttribute("wingworks");
             if (__instance.Controls.Gliding)
             {
