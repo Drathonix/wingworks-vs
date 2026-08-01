@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Reflection;
 using ConfigLib;
+using Vintagestory.API.Server;
+using Vintagestory.Server;
 
 namespace Wingworks;
 
@@ -18,7 +20,6 @@ public sealed class WingworksModSystem : ModSystem
         {
             SubscribeToConfigChange(api);
         }
-        
         _harmony = new Harmony(HarmonyId);
         _harmony.PatchAll(Assembly.GetExecutingAssembly());
     }
@@ -26,6 +27,8 @@ public sealed class WingworksModSystem : ModSystem
     public override void StartClientSide(ICoreClientAPI capi)
     {
     }
+
+
 
     public override void Dispose()
     {

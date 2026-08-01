@@ -53,7 +53,7 @@ public class PatchEntityAgent
 
     internal static bool Prefix(EntityAgent __instance, float dt)
     {
-        if (WingworksStats.CanFly(__instance.Stats) && __instance.Api.Side.IsServer())
+        if (WingworksStats.CanFly(__instance.Stats))
         {
             ITreeAttribute wings = __instance.WatchedAttributes.GetOrAddTreeAttribute("wingworks");
             if (__instance.Controls.Gliding)
@@ -86,7 +86,7 @@ public class PatchEntityAgent
                     WingworksStats.OnDefaultedStat(__instance.Stats, "ww_flight_hunger", ModConfig.Instance.FlightHunger, (hungerDrain) =>
                     {
                         EntityBehaviorHunger hunger = __instance.GetBehavior<EntityBehaviorHunger>();
-                        if ((__instance is EntityPlayer player && WingworksStats.ShouldUseHunger(player)) && hunger != null)
+                        if (hunger != null && __instance is EntityPlayer player && WingworksStats.ShouldUseHunger(player))
                         {
                             hunger.ConsumeSaturation(hungerDrain);
                         }
@@ -117,7 +117,7 @@ public class PatchEntityAgent
                     WingworksStats.OnDefaultedStat(__instance.Stats, "ww_flap_hunger", ModConfig.Instance.FlapHunger, (hungerDrain) =>
                     {
                         EntityBehaviorHunger hunger = __instance.GetBehavior<EntityBehaviorHunger>();
-                        if ((__instance is EntityPlayer player && WingworksStats.ShouldUseHunger(player)) && hunger != null)
+                        if (hunger != null && __instance is EntityPlayer player && WingworksStats.ShouldUseHunger(player))
                         {
                             hunger.ConsumeSaturation(hungerDrain * pitchVerticalCoefficient);
                         }
