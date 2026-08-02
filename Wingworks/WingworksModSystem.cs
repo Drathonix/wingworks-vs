@@ -12,6 +12,7 @@ public sealed class WingworksModSystem : ModSystem
     private const string ConfigLibId = "configlib";
 
     private Harmony _harmony;
+    private static ICoreClientAPI capi;
 
     public override void Start(ICoreAPI api)
     {
@@ -24,8 +25,9 @@ public sealed class WingworksModSystem : ModSystem
         _harmony.PatchAll(Assembly.GetExecutingAssembly());
     }
 
-    public override void StartClientSide(ICoreClientAPI capi)
+    public override void StartClientSide(ICoreClientAPI api)
     {
+        capi = api;
     }
 
 
@@ -55,5 +57,13 @@ public sealed class WingworksModSystem : ModSystem
         {
             system.GetConfig(HarmonyId)?.AssignSettingsValues(ModConfig.Instance);
         };
+    }
+
+    public static bool DoCalculations(EntityAgent instance)
+    {
+        if (instance is EntityPlayer p) {
+            return capi == null || capi.World?.Player?.PlayerUID == p.PlayerUID;
+        }
+        return true;
     }
 }

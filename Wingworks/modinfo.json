@@ -9,7 +9,7 @@
     "version": "1.1.3",
     "dependencies": {
       "game": "1.22.3",
-      "gliderrevampdrathon": "1.0.2",
+      "gliderrevampdrathon": "1.0.3",
       "configlib": ""
     }
 }

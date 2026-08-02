@@ -53,7 +53,7 @@ public class PatchEntityAgent
 
     internal static bool Prefix(EntityAgent __instance, float dt)
     {
-        if (WingworksStats.CanFly(__instance.Stats))
+        if (WingworksStats.CanFly(__instance.Stats) && WingworksModSystem.DoCalculations(__instance))
         {
             ITreeAttribute wings = __instance.WatchedAttributes.GetOrAddTreeAttribute("wingworks");
             if (__instance.Controls.Gliding)

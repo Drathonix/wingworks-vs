@@ -1,3 +1,7 @@
+# Wingworks 1.1.3 - Multiplayer Fixes
+1. Updated to Glider Revamp V1.0.3 - Fixes all multiplayer animation issues.
+2. Made some server-side code also execute on the client.
+
 # Wingworks 1.1.0 - The Official Release
 Heya! This update took multiple weeks of debugging and tweaking to get out, I hope you all enjoy it.
 
