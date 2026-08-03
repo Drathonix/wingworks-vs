@@ -24,7 +24,8 @@ Most of these traits override some value within the mod config, use them to buff
 12. "ww_climb_coefficient" [0.0-infinity]: The amount of speed lost per meter of height gained.
 13. "ww_turn_rate" [0.0-infinity]: The degrees per second you can turn.
 14. "ww_drag_coefficient" [0.0-1.0]: %Speed lost to drag.
-15. "ww_flap_min_speed" [0-infinity]: Minimum speed where a multiplier should be applied to increase initial flight speed.
+15. "ww_flap_min_speed" [0.0-infinity]: Minimum speed where a multiplier should be applied to increase initial flight speed.
+16. "ww_wetness_debuff" [0.0-1.0]: How much the player's wetness level should debuff flight. For reference the player's wetness ranges between 0-1. If this trait was set to 0.5 and their wetness was 1 they would find flapping to be half as effective as normal. This also causes a small amount of additional drag.
 
 I have already modified the traits of KC's dragons in this mod. You can patch the patches or fork my project if you wish to nerf or buff them.
 

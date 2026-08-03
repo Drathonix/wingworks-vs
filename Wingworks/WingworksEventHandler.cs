@@ -38,8 +38,9 @@ public class WingworksEventHandler
 
     public static float CalculateDrag(Entity entity, EntityPos pos, float drag)
     {
+        var wetnessDebuff = 1/Math.Clamp(WingworksStats.CalculateWetnessDebuffMultiplier(entity),0.8F,1F);
         //                                                                         TODO VVV RM THIS, I have added this temporarily to nerf the severity of drag's effect which is just too strong and prevents achieving terminal velocity.
-        return WingworksStats.GetOrDefault(entity.Stats, "ww_drag_coefficient", drag) * 0.85F;
+        return WingworksStats.GetOrDefault(entity.Stats, "ww_drag_coefficient", drag) * 0.85F * wetnessDebuff;
     }
 
     public static float CalculateClimb(Entity entity, EntityPos pos, float climb)
@@ -73,6 +74,7 @@ public class WingworksEventHandler
 
             if (wings.GetFloat("flap") > 9f / 24f)
             {
+                var wetnessDebuff = WingworksStats.CalculateWetnessDebuffMultiplier(entity);
                 // Bonus velocity when looking up at the cost of greater hunger drain.
                 var pitchVerticalCoefficient = 1 - Math.Min(0f, WingworksStats.GetPitchFrac(pos));
                 WingworksStats.OnDefaultedStat(entity.Stats, "ww_flap_vertical_acceleration", ModConfig.Instance.FlapVerticalBoost, (gainTickY) =>
@@ -80,7 +82,7 @@ public class WingworksEventHandler
                     //TODO Either permanently remove this or redo it.
                     WingworksStats.OnDefaultedStat(entity.Stats, "ww_pitch_vertical_multiplier", 0.4F, (val) =>
                     {
-                        pos.Motion.Y += gainTickY / 15F * dt * val;// * val;// * pitchVerticalCoefficient * val;
+                        pos.Motion.Y += gainTickY / 15F * dt * val * wetnessDebuff;// * val;// * pitchVerticalCoefficient * val;
                     });
                 });
                 WingworksStats.OnDefaultedStat(entity.Stats, "ww_flap_forward_acceleration", ModConfig.Instance.FlapForwardBoost, (gainTickF) =>
@@ -92,12 +94,12 @@ public class WingworksEventHandler
                         var lowSpeedMultiplier = float.Clamp(speedMin / (float)controls.GlideSpeed, 1F, 3F);
                         //TODO: Make this make sense? Idk I'm just trying to make vertical flight easier but not busted.
                         var pitchForwardMultiplier = Math.Clamp(float.Pow(pitchVerticalCoefficient, lowSpeedMultiplier * 2F) * (pitchVerticalCoefficient > 1 ? 1F : 1.5F), 1F, 5.5F);
-                        controls.GlideSpeed += (gainTickF / 15F) * dt * pitchForwardMultiplier * lowSpeedMultiplier;
+                        controls.GlideSpeed += (gainTickF / 15F) * dt * pitchForwardMultiplier * lowSpeedMultiplier * wetnessDebuff;
                         //});
                     });
                 });
             }
         }
-        return true; //return WingworksPModuleFlight.ApplyFlying(dt,entity,pos,controls);
+        return true;
     }
 }

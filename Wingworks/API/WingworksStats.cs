@@ -68,4 +68,16 @@ public static class WingworksStats
         return f;
 
     }
+
+    public static float CalculateWetnessDebuffMultiplier(Entity entity)
+    {
+        var debuff = GetOrDefault(entity.Stats, "ww_wetness_debuff", 0F);
+        debuff = Math.Clamp(debuff, 0F, 1F);
+        if (debuff == 0)
+        {
+            return 1;
+        }
+        var wetness = entity.WatchedAttributes.GetFloat("wetness", 0.0f);
+        return Math.Clamp(1F - (debuff * wetness), 0F, 1F);
+    }
 }
