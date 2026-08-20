@@ -3,6 +3,7 @@
     "code": "ww-flight",
     "type": "mixed",
     "attributes": {
+      "canGlide":  1,
       "ww_can_fly": 1,
       "ww_stall_speed": 1,
       "ww_start_speed": 5,
