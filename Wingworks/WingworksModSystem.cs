@@ -16,7 +16,6 @@ public sealed class WingworksModSystem : ModSystem
 
     private Harmony _harmony;
     private static ICoreClientAPI capi;
-
     public override void Start(ICoreAPI api)
     {
         WingworksEventHandler.Init();
