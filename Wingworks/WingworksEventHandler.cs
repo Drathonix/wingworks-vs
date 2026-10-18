@@ -12,13 +12,13 @@ public class WingworksEventHandler
 {
     public static void Init()
     {
-        GliderEvents.RegisterCalculateActivationSpeed(CalculateActivationSpeed, int.MaxValue);
-        GliderEvents.RegisterCalculateClimbCoefficient(CalculateClimb, int.MaxValue);
-        GliderEvents.RegisterCalculateDragCoefficient(CalculateDrag, int.MaxValue);
-        GliderEvents.RegisterCalculateStallSpeed(CalculateStall, int.MaxValue);
-        GliderEvents.RegisterCalculateTurnRate(CalculateTurnRate, int.MaxValue);
-        GliderEvents.RegisterCalculateTerminalVelocity(CalculateTerminalVelocity, int.MaxValue);
-        GliderEvents.RegisterBeforeGliderPhysicsCalculations(HandleFlapping, int.MaxValue);
+        GliderRevampModSystem.EVENTS.RegisterCalculateActivationSpeed(CalculateActivationSpeed, int.MaxValue);
+        GliderRevampModSystem.EVENTS.RegisterCalculateClimbCoefficient(CalculateClimb, int.MaxValue);
+        GliderRevampModSystem.EVENTS.RegisterCalculateDragCoefficient(CalculateDrag, int.MaxValue);
+        GliderRevampModSystem.EVENTS.RegisterCalculateStallSpeed(CalculateStall, int.MaxValue);
+        GliderRevampModSystem.EVENTS.RegisterCalculateTurnRate(CalculateTurnRate, int.MaxValue);
+        GliderRevampModSystem.EVENTS.RegisterCalculateTerminalVelocity(CalculateTerminalVelocity, int.MaxValue);
+        GliderRevampModSystem.EVENTS.RegisterBeforeGliderPhysicsCalculations(HandleFlapping, int.MaxValue);
     }
 
     private static float CalculateTerminalVelocity(Entity entity, EntityPos pos, float velocity)

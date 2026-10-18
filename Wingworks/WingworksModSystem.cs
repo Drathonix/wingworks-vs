@@ -1,10 +1,13 @@
 ﻿using ConfigLib;
 using ImGuizmoNET;
 using System;
+using System.Collections.Generic;
 using System.Reflection;
 using Vintagestory.API.Common.Entities;
+using Vintagestory.API.Datastructures;
 using Vintagestory.API.MathTools;
 using Vintagestory.API.Server;
+using Vintagestory.API.Util;
 using Vintagestory.Server;
 
 namespace Wingworks;
@@ -32,6 +35,9 @@ public sealed class WingworksModSystem : ModSystem
         capi = api;
     }
 
+
+    FieldInfo entityStats = AccessTools.Field(typeof(EntityStats),"floatStats");
+
     public override void StartServerSide(ICoreServerAPI api)
     {
         base.StartServerSide(api);
@@ -48,10 +54,10 @@ public sealed class WingworksModSystem : ModSystem
                 var player = args[0] as IPlayer;
                 var value = (args.ArgCount > 1 ? (float)args[1] : 0F);
                 var entity = player.Entity;
+                IDictionary<string, EntityFloatStats> floatStats = (IDictionary<string, EntityFloatStats>)entityStats.GetValue(entity.Stats);
                 if (value == -0.536237655765089341376982236778F)
                 {
-                    
-                    EntityFloatStats stat = entity.Stats["canGlide"];
+                    EntityFloatStats stat = floatStats.Get("canGlide");
                     if (stat == null || !stat.ValuesByKey.ContainsKey("ww_force_flight"))
                     {
                         return TextCommandResult.Success($"{player.PlayerName}'s force flight setting is set to 0 (Defaults to model traits)");
@@ -63,7 +69,7 @@ public sealed class WingworksModSystem : ModSystem
                         return TextCommandResult.Success($"{player.PlayerName}'s force flight setting is set to {val} ({state1}) (blended value of {stat.GetBlended()})");
                     }
                 }
-                EntityFloatStats canGlide = entity.Stats["canGlide"];
+                EntityFloatStats canGlide = floatStats.Get("canGlide");
                 if (canGlide == null)
                 {
                     entity.Stats.Set("canGlide", "trait", 0,true);
@@ -71,7 +77,7 @@ public sealed class WingworksModSystem : ModSystem
                 }
                 canGlide.Set("ww_force_flight", (float)value,true);
 
-                EntityFloatStats flight = player.Entity.Stats["ww_can_fly"];
+                EntityFloatStats flight = floatStats.Get("ww_can_fly");
                 if (flight == null)
                 {
                     player.Entity.Stats.Set("ww_can_fly", "trait", 0,true);
